@@ -1,0 +1,12 @@
+#! /bin/bash
+
+cd preprocess
+make release || exit 1
+cd ..
+
+cd search
+make release || exit 1
+cd ..
+cd tempo-sat-itsat
+./build
+

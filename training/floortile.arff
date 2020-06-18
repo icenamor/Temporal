@@ -1,0 +1,586 @@
+@relation problem
+
+@attribute domain string
+
+@attribute task_name string
+
+@attribute requirements numeric
+
+@attribute types numeric
+
+@attribute objects numeric
+
+@attribute predicates numeric
+
+@attribute init numeric
+
+@attribute goal numeric
+
+@attribute actions numeric
+
+@attribute axioms numeric
+
+@attribute durative_actions numeric
+
+@attribute axiom_counter numeric
+
+@attribute function_symbols numeric
+
+@attribute function_administrator numeric
+
+@attribute generated_rules numeric
+
+@attribute final_queue_length numeric
+
+@attribute translator_variables numeric
+
+@attribute translator_derived_variables numeric
+
+@attribute translator_facts numeric
+
+@attribute translator_operators numeric
+
+@attribute mutex_key numeric
+
+@attribute strips_to_sas numeric
+
+@attribute ranges numeric
+
+@attribute goal_list numeric
+
+@attribute task_init numeric
+
+@attribute translator_act numeric
+
+@attribute translator_durative_act numeric
+
+@attribute translator_axiom numeric
+
+@attribute translator_num_axioms numeric
+
+@attribute translator_num_axioms_by_layer  numeric
+
+@attribute translator_max_num_layer  numeric
+
+@attribute translator_num_axiom_map numeric
+
+@attribute translator_const_num_axioms numeric
+
+@attribute translator_reachable numeric
+
+@attribute translator_groups numeric
+
+@attribute translator_mutex_group numeric
+
+@attribute translator_translation_key numeric
+
+@attribute numberVariablesCG numeric
+
+@attribute highLevelVariablesCG numeric
+
+@attribute totalEdgesCG numeric
+
+@attribute totalWeightCG numeric
+
+@attribute veRatio numeric
+
+@attribute weRatio numeric
+
+@attribute wvRatio numeric
+
+@attribute hvRatio numeric
+
+@attribute inputEdgeCGMax numeric
+
+@attribute inputEdgeCGAvg numeric
+
+@attribute inputEdgeCGStd numeric
+
+@attribute outputEdgeCGMax numeric
+
+@attribute outputEdgeCGAvg numeric
+
+@attribute outputEdgeCGStd numeric
+
+@attribute inputWeightCGMax numeric
+
+@attribute inputWeightCGAvg numeric
+
+@attribute inputWeightCGStd numeric
+
+@attribute outputWeightCGMax numeric
+
+@attribute outputWeightCGAvg numeric
+
+@attribute outputWeightCGStd numeric
+
+@attribute inputEdgeHVMax numeric
+
+@attribute inputEdgeHVAvg numeric
+
+@attribute inputEdgeHVStd numeric
+
+@attribute outputEdgeHVMax numeric
+
+@attribute outputEdgeHVAvg numeric
+
+@attribute outputEdgeHVStd numeric
+
+@attribute inputWeightHVMax numeric
+
+@attribute inputWeightHVAvg numeric
+
+@attribute inputWeightHVStd numeric
+
+@attribute outputWeightHVMax numeric
+
+@attribute outputWeightHVAvg numeric
+
+@attribute outputWeightHVStd numeric
+
+@attribute numberVariablesDTG numeric
+
+@attribute totalEdgesDTG numeric
+
+@attribute totalWeigthDTG numeric
+
+@attribute edVaRatioDTG numeric
+
+@attribute weEdRatioDTG numeric
+
+@attribute weVaRatioDTG numeric
+
+@attribute inputEdgeDTGMax numeric
+
+@attribute inputEdgeDTGAvg numeric
+
+@attribute inputEdgeDTGStd numeric
+
+@attribute outputEdgeDTGMax numeric
+
+@attribute outputEdgeDTGAvg numeric
+
+@attribute outputEdgeDTGStd numeric
+
+@attribute inputWeightDTGMax numeric
+
+@attribute inputWeightDTGAvg numeric
+
+@attribute inputWeightDTGStd numeric
+
+@attribute outputWeightDTGMax numeric
+
+@attribute outputWeightDTGAvg numeric
+
+@attribute outputWeightDTGStd numeric
+
+@attribute avg_level numeric
+
+@attribute avg_duration numeric
+
+@attribute str_level numeric
+
+@attribute str_duration numeric
+
+@attribute global_num_type_start numeric
+
+@attribute global_num_type_end numeric
+
+@attribute global_num_type_compressed numeric
+
+@attribute global_num_type_ax_red numeric
+
+@attribute global_total_level numeric
+
+@attribute global_min_level numeric
+
+@attribute global_max_level numeric
+
+@attribute global_total_duration numeric
+
+@attribute global_min_duration numeric
+
+@attribute global_max_duration numeric
+
+@attribute PDDL_assignment  numeric
+
+@attribute PDDL_durative_actions  numeric
+
+@attribute PDDL_type_numeric_duration  numeric
+
+@attribute PDDL_type_function_duration  numeric
+
+@attribute PDDL_avg_numeric_duration  numeric
+
+@attribute PDDL_min_numeric_duration  numeric
+
+@attribute PDDL_max_numeric_duration  numeric
+
+@attribute PDDL_functions  numeric
+
+@attribute PDDL_avg_arity  numeric
+
+@attribute PDDL_min_arity  numeric
+
+@attribute PDDL_max_arity  numeric
+
+@attribute PDDL_avg_at_start_precondition  numeric
+
+@attribute PDDL_min_at_start_precondition  numeric
+
+@attribute PDDL_max_at_start_precondition  numeric
+
+@attribute PDDL_std_at_start_precondition  numeric
+
+@attribute PDDL_avg_over_all_precondition  numeric
+
+@attribute PDDL_min_over_all_precondition  numeric
+
+@attribute PDDL_max_over_all_precondition  numeric
+
+@attribute PDDL_std_over_all_precondition  numeric
+
+@attribute PDDL_avg_at_start_postcondition  numeric
+
+@attribute PDDL_min_at_start_postcondition  numeric
+
+@attribute PDDL_max_at_start_postcondition  numeric
+
+@attribute PDDL_std_at_start_postcondition  numeric
+
+@attribute PDDL_avg_at_end_postcondition  numeric
+
+@attribute PDDL_min_at_end_postcondition  numeric
+
+@attribute PDDL_max_at_end_postcondition  numeric
+
+@attribute PDDL_std_at_end_postcondition  numeric
+
+@attribute SAT_RationofRelevantActions  numeric
+
+@attribute SAT_NumberofActon  numeric
+
+@attribute SAT_NumberofPropositions  numeric
+
+@attribute SAT_NumberofRelevantActons  numeric
+
+@attribute SAT_NumberofRelevantPropositions  numeric
+
+@attribute SAT_VariablesEnd  numeric
+
+@attribute SAT_propEnd  numeric
+
+@attribute SAT_actionEnd  numeric
+
+@attribute SAT_TotalMutexClauses  numeric
+
+@attribute SAT_ratioEnd  numeric
+
+@attribute SAT_TotalEventClauses  numeric
+
+@attribute SAT_TotalClauses  numeric
+
+@attribute SAT_numberFiles  numeric
+
+@attribute SAT_nvarsOrig  numeric
+
+@attribute SAT_nclausesOrig  numeric
+
+@attribute SAT_nvars  numeric
+
+@attribute SAT_nclauses  numeric
+
+@attribute SAT_reducedVars  numeric
+
+@attribute SAT_reducedClauses  numeric
+
+@attribute SAT_Pre-featuretime  numeric
+
+@attribute SAT_vars-clauses-ratio  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-mean  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-coeff-variation  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-min  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-max  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-entropy  numeric
+
+@attribute SAT_VCG-CLAUSE-mean  numeric
+
+@attribute SAT_VCG-CLAUSE-coeff-variation  numeric
+
+@attribute SAT_VCG-CLAUSE-min  numeric
+
+@attribute SAT_VCG-CLAUSE-max  numeric
+
+@attribute SAT_VCG-CLAUSE-entropy  numeric
+
+@attribute SAT_UNARY  numeric
+
+@attribute SAT_BINARY+  numeric
+
+@attribute SAT_TRINARY+  numeric
+
+@attribute SAT_Basic-featuretime  numeric
+
+@attribute SAT_VCG-VAR-mean  numeric
+
+@attribute SAT_VCG-VAR-coeff-variation  numeric
+
+@attribute SAT_VCG-VAR-min  numeric
+
+@attribute SAT_VCG-VAR-max  numeric
+
+@attribute SAT_VCG-VAR-entropy  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-mean  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-stdev  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-min  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-max  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-entropy  numeric
+
+@attribute SAT_HORNY-VAR-mean  numeric
+
+@attribute SAT_HORNY-VAR-coeff-variation  numeric
+
+@attribute SAT_HORNY-VAR-min  numeric
+
+@attribute SAT_HORNY-VAR-max  numeric
+
+@attribute SAT_HORNY-VAR-entropy  numeric
+
+@attribute SAT_horn-clauses-fraction  numeric
+
+@attribute SAT_VG-mean  numeric
+
+@attribute SAT_VG-coeff-variation  numeric
+
+@attribute SAT_VG-min  numeric
+
+@attribute SAT_VG-max  numeric
+
+@attribute SAT_KLB-featuretime  numeric
+
+@attribute SAT_CG-mean  numeric
+
+@attribute SAT_CG-coeff-variation  numeric
+
+@attribute SAT_CG-min  numeric
+
+@attribute SAT_CG-max  numeric
+
+@attribute SAT_CG-entropy  numeric
+
+@attribute SAT_cluster-coeff-mean  numeric
+
+@attribute SAT_cluster-coeff-coeff-variation  numeric
+
+@attribute SAT_cluster-coeff-min  numeric
+
+@attribute SAT_cluster-coeff-max  numeric
+
+@attribute SAT_cluster-coeff-entropy  numeric
+
+@attribute SAT_CG-featuretime  numeric
+
+@attribute SAT_DIAMETER-mean  numeric
+
+@attribute SAT_DIAMETER-coeff-variation  numeric
+
+@attribute SAT_DIAMETER-min  numeric
+
+@attribute SAT_DIAMETER-max  numeric
+
+@attribute SAT_DIAMETER-entropy  numeric
+
+@attribute SAT_DIAMETER-featuretime  numeric
+
+@attribute SAT_cl-num-mean  numeric
+
+@attribute SAT_cl-num-coeff-variation  numeric
+
+@attribute SAT_cl-num-min  numeric
+
+@attribute SAT_cl-num-max  numeric
+
+@attribute SAT_cl-num-q90  numeric
+
+@attribute SAT_cl-num-q10  numeric
+
+@attribute SAT_cl-num-q75  numeric
+
+@attribute SAT_cl-num-q25  numeric
+
+@attribute SAT_cl-num-q50  numeric
+
+@attribute SAT_cl-size-mean  numeric
+
+@attribute SAT_cl-size-coeff-variation  numeric
+
+@attribute SAT_cl-size-min  numeric
+
+@attribute SAT_cl-size-max  numeric
+
+@attribute SAT_cl-size-q90  numeric
+
+@attribute SAT_cl-size-q10  numeric
+
+@attribute SAT_cl-size-q75  numeric
+
+@attribute SAT_cl-size-q25  numeric
+
+@attribute SAT_cl-size-q50  numeric
+
+@attribute SAT_cl-featuretime  numeric
+
+@attribute SAT_SP-bias-mean  numeric
+
+@attribute SAT_SP-bias-coeff-variation  numeric
+
+@attribute SAT_SP-bias-min  numeric
+
+@attribute SAT_SP-bias-max  numeric
+
+@attribute SAT_SP-bias-q90  numeric
+
+@attribute SAT_SP-bias-q10  numeric
+
+@attribute SAT_SP-bias-q75  numeric
+
+@attribute SAT_SP-bias-q25  numeric
+
+@attribute SAT_SP-bias-q50  numeric
+
+@attribute SAT_SP-unconstraint-mean  numeric
+
+@attribute SAT_SP-unconstraint-coeff-variation  numeric
+
+@attribute SAT_SP-unconstraint-min  numeric
+
+@attribute SAT_SP-unconstraint-max  numeric
+
+@attribute SAT_SP-unconstraint-q90  numeric
+
+@attribute SAT_SP-unconstraint-q10  numeric
+
+@attribute SAT_SP-unconstraint-q75  numeric
+
+@attribute SAT_SP-unconstraint-q25  numeric
+
+@attribute SAT_SP-unconstraint-q50  numeric
+
+@attribute SAT_sp-featuretime  numeric
+
+@attribute SAT_vars-reduced-depth-1  numeric
+
+@attribute SAT_vars-reduced-depth-4  numeric
+
+@attribute SAT_vars-reduced-depth-16  numeric
+
+@attribute SAT_vars-reduced-depth-64  numeric
+
+@attribute SAT_vars-reduced-depth-256  numeric
+
+@attribute SAT_unit-featuretime  numeric
+
+@attribute SAT_LP_OBJ  numeric
+
+@attribute SAT_LPSLack-mean  numeric
+
+@attribute SAT_LPSLack-coeff-variation  numeric
+
+@attribute SAT_LPSLack-min  numeric
+
+@attribute SAT_LPSLack-max  numeric
+
+@attribute SAT_lpIntRatio  numeric
+
+@attribute SAT_lpTIME  numeric
+
+@attribute SAT_saps_BestSolution_Mean  numeric
+
+@attribute SAT_saps_BestSolution_CoeffVariance  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Mean  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_CoeffVariance  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Median  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Q.10  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Q.90  numeric
+
+@attribute SAT_saps_BestAvgImprovement_Mean  numeric
+
+@attribute SAT_saps_BestAvgImprovement_CoeffVariance  numeric
+
+@attribute SAT_saps_FirstLocalMinRatio_Mean  numeric
+
+@attribute SAT_saps_FirstLocalMinRatio_CoeffVariance  numeric
+
+@attribute SAT_ls-saps-featuretime  numeric
+
+@attribute SAT_gsat_BestSolution_Mean  numeric
+
+@attribute SAT_gsat_BestSolution_CoeffVariance  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Mean  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_CoeffVariance  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Median  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Q.10  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Q.90  numeric
+
+@attribute SAT_gsat_BestAvgImprovement_Mean  numeric
+
+@attribute SAT_gsat_BestAvgImprovement_CoeffVariance  numeric
+
+@attribute SAT_gsat_FirstLocalMinRatio_Mean  numeric
+
+@attribute SAT_gsat_FirstLocalMinRatio_CoeffVariance  numeric
+
+@attribute SAT_ls-gsat-featuretime  numeric
+
+@attribute SAT_lobjois-mean-depth-over-vars  numeric
+
+@attribute SAT_lobjois-log-num-nodes-over-vars  numeric
+
+@attribute SAT_lobjois-featuretime  numeric
+
+
+
+@data
+
+
+
+floor-tile,pfile12,2,4,25,11,87,16,0,0,7,0,0,0,78,1790,31,0,149,0,50,130,31,16,112,0,390,0,4,1,-1,0,4,7,27,50,27,27,16, 268, 2640,0.1007,9.8507,97.7778,0.5926, 23,9.9259,6.5145, 20,9.9259,4.7213, 376,97.7778,102.508,248,97.7778,64.9748, 7,3.7037,3.1129, 120,59.5556,51.7926, 72,34.6667,30.1699, 120,59.5556,51.7926,150, 1140, 3024,0.377,0.1316, 1, 4,2.4,0.1853, 4,2.3167,0, 8,4.8,0.3706, 8,4.6333,0,29.4053,2,0.8201,0,192,948,0,0,33522,27,30,2280,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7231,390,190,282,102,1998,306,1692,7248,0.6725,1140,10777,12,1998,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile7,2,4,24,11,86,16,0,0,7,0,0,0,78,1471,28,0,124,0,48,108,28,16,110,0,260,0,4,1,-1,0,4,7,24,48,24,24,16, 184, 1760,0.1304,9.5652,73.3333,0.6667, 21,7.6667,5.7783, 20,7.6667,4.1298, 376,73.3333,95.2237,248,73.3333,56.7646, 6,3.5,2.5331, 80,44.6667,33.4598, 48, 26,19.4936, 80,44.6667,33.4598,126, 760, 2016,0.377,0.1658, 1, 4,2.5083,0.1597, 4,2.4111,0, 8,5.0167,0.3194, 8,4.8222,0,26.4053,2,0.8201,0,128,632,0,0,20068,24,27,1520,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7231,260,168,188,80,3300,480,2820,12200,0.712,1900,17136,13,5876,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile14,2,4,25,11,87,16,0,0,7,0,0,0,78,1790,31,0,149,0,50,130,31,16,112,0,390,0,4,1,-1,0,4,7,27,50,27,27,16, 268, 2640,0.1007,9.8507,97.7778,0.5926, 23,9.9259,6.5145, 20,9.9259,4.7213, 376,97.7778,102.508,248,97.7778,64.9748, 7,3.7037,3.1129, 120,59.5556,51.7926, 72,34.6667,30.1699, 120,59.5556,51.7926,150, 1140, 3024,0.377,0.1316, 1, 4,2.4,0.1853, 4,2.3167,0, 8,4.8,0.3706, 8,4.6333,0,29.4053,2,0.8201,0,192,948,0,0,33522,27,30,2280,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7231,390,190,282,102,1998,306,1692,7248,0.6725,1140,10777,12,11478,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile17,2,4,35,11,133,25,0,0,7,0,0,0,78,2694,41,0,219,0,70,190,41,25,168,0,606,0,4,1,-1,0,4,7,37,70,37,37,25, 404, 4152,0,10.2772,112.216,0.6757, 33,10.9189,9.6601, 30,10.9189,6.3176, 592,112.216,148.737,392,112.216,90.3528, 7,4.3243,3.0408, 120,70.5405,51.3002, 72,41.3514,30.1386, 120,70.5405,51.3002,220, 1788, 4752,0.3763,0.123, 1, 4,2.65,0.16, 4,2.5824,0, 8,5.3,0.3199, 8,5.1649,0,39.4245,2,0.8002,0,300,1488,0,0,70491,37,40,3576,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7277,606,286,441,151,7521,906,6615,28465,0.6681,4440,42609,13,16365,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile3,2,4,16,11,50,9,0,0,7,0,0,0,78,883,20,0,76,0,32,68,20,9,66,0,148,0,4,1,-1,0,4,7,16,32,16,16,9, 108, 976,0.1481,9.037, 61,0.5625, 13,6.75,3.3819, 12,6.75,2.8174, 208, 61,57.6802,136, 61,35.8748, 6,2.8125,2.5303, 80,35.25,32.9004, 48,20.25,18.8398, 80,35.25,32.9004,78, 424, 1120,0.3786,0.184, 1, 6,2.6667,0.1914, 5,2.5521,0.1105, 12,5.3333,0.3827, 10,5.1042,0.1105,18.3632,2,0.8607,0,72,352,0,0,7786,16,19,848,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7162,148,100,106,49,783,147,636,2720,0.7156,432,3801,12,2618,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile11,2,4,25,11,87,16,0,0,7,0,0,0,78,1790,31,0,149,0,50,130,31,16,112,0,390,0,4,1,-1,0,4,7,27,50,27,27,16, 268, 2640,0.1007,9.8507,97.7778,0.5926, 23,9.9259,6.5145, 20,9.9259,4.7213, 376,97.7778,102.508,248,97.7778,64.9748, 7,3.7037,3.1129, 120,59.5556,51.7926, 72,34.6667,30.1699, 120,59.5556,51.7926,150, 1140, 3024,0.377,0.1316, 1, 4,2.4,0.1853, 4,2.3167,0, 8,4.8,0.3706, 8,4.6333,0,29.4053,2,0.8201,0,192,948,0,0,33522,27,30,2280,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7231,390,190,282,102,1998,306,1692,7248,0.6725,1140,10777,12,1998,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile8,2,4,24,11,86,16,0,0,7,0,0,0,78,1471,28,0,124,0,48,108,28,16,110,0,260,0,4,1,-1,0,4,7,24,48,24,24,16, 184, 1760,0.1304,9.5652,73.3333,0.6667, 21,7.6667,5.7783, 20,7.6667,4.1298, 376,73.3333,95.2237,248,73.3333,56.7646, 6,3.5,2.5331, 80,44.6667,33.4598, 48, 26,19.4936, 80,44.6667,33.4598,126, 760, 2016,0.377,0.1658, 1, 4,2.5083,0.1597, 4,2.4111,0, 8,5.0167,0.3194, 8,4.8222,0,26.4053,2,0.8201,0,128,632,0,0,20068,24,27,1520,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7231,260,168,188,80,3300,480,2820,12200,0.712,1900,17136,13,5232,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile10,2,4,25,11,87,16,0,0,7,0,0,0,78,1790,31,0,149,0,50,130,31,16,112,0,390,0,4,1,-1,0,4,7,27,50,27,27,16, 268, 2640,0.1007,9.8507,97.7778,0.5926, 23,9.9259,6.5145, 20,9.9259,4.7213, 376,97.7778,102.508,248,97.7778,64.9748, 7,3.7037,3.1129, 120,59.5556,51.7926, 72,34.6667,30.1699, 120,59.5556,51.7926,150, 1140, 3024,0.377,0.1316, 1, 4,2.4,0.1853, 4,2.3167,0, 8,4.8,0.3706, 8,4.6333,0,29.4053,2,0.8201,0,192,948,0,0,33522,27,30,2280,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7231,390,190,282,102,1998,306,1692,7248,0.6725,1140,10777,12,10530,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile19,2,4,35,11,133,25,0,0,7,0,0,0,78,2694,41,0,219,0,70,190,41,25,168,0,606,0,4,1,-1,0,4,7,37,70,37,37,25, 404, 4152,0,10.2772,112.216,0.6757, 33,10.9189,9.6601, 30,10.9189,6.3176, 592,112.216,148.737,392,112.216,90.3528, 7,4.3243,3.0408, 120,70.5405,51.3002, 72,41.3514,30.1386, 120,70.5405,51.3002,220, 1788, 4752,0.3763,0.123, 1, 4,2.65,0.16, 4,2.5824,0, 8,5.3,0.3199, 8,5.1649,0,39.4245,2,0.8002,0,300,1488,0,0,70491,37,40,3576,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7277,606,286,441,151,7521,906,6615,28465,0.6681,4440,42609,13,11943,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile1,2,4,16,11,50,9,0,0,7,0,0,0,78,883,20,0,76,0,32,68,20,9,66,0,148,0,4,1,-1,0,4,7,16,32,16,16,9, 108, 976,0.1481,9.037, 61,0.5625, 13,6.75,3.3819, 12,6.75,2.8174, 208, 61,57.6802,136, 61,35.8748, 6,2.8125,2.5303, 80,35.25,32.9004, 48,20.25,18.8398, 80,35.25,32.9004,78, 424, 1120,0.3786,0.184, 1, 6,2.6667,0.1914, 5,2.5521,0.1105, 12,5.3333,0.3827, 10,5.1042,0.1105,18.3632,2,0.8607,0,72,352,0,0,7786,16,19,848,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7162,148,100,106,49,783,147,636,2720,0.7156,432,3801,12,2618,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile5,2,4,24,11,86,16,0,0,7,0,0,0,78,1471,28,0,124,0,48,108,28,16,110,0,260,0,4,1,-1,0,4,7,24,48,24,24,16, 184, 1760,0.1304,9.5652,73.3333,0.6667, 21,7.6667,5.7783, 20,7.6667,4.1298, 376,73.3333,95.2237,248,73.3333,56.7646, 6,3.5,2.5331, 80,44.6667,33.4598, 48, 26,19.4936, 80,44.6667,33.4598,126, 760, 2016,0.377,0.1658, 1, 4,2.5083,0.1597, 4,2.4111,0, 8,5.0167,0.3194, 8,4.8222,0,26.4053,2,0.8201,0,128,632,0,0,20068,24,27,1520,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7231,260,168,188,80,3300,480,2820,12200,0.712,1900,17136,13,7164,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile6,2,4,24,11,86,16,0,0,7,0,0,0,78,1471,28,0,124,0,48,108,28,16,110,0,260,0,4,1,-1,0,4,7,24,48,24,24,16, 184, 1760,0.1304,9.5652,73.3333,0.6667, 21,7.6667,5.7783, 20,7.6667,4.1298, 376,73.3333,95.2237,248,73.3333,56.7646, 6,3.5,2.5331, 80,44.6667,33.4598, 48, 26,19.4936, 80,44.6667,33.4598,126, 760, 2016,0.377,0.1658, 1, 4,2.5083,0.1597, 4,2.4111,0, 8,5.0167,0.3194, 8,4.8222,0,26.4053,2,0.8201,0,128,632,0,0,20068,24,27,1520,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7231,260,168,188,80,3300,480,2820,12200,0.712,1900,17136,13,4588,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile18,2,4,35,11,133,25,0,0,7,0,0,0,78,2694,41,0,219,0,70,190,41,25,168,0,606,0,4,1,-1,0,4,7,37,70,37,37,25, 404, 4152,0,10.2772,112.216,0.6757, 33,10.9189,9.6601, 30,10.9189,6.3176, 592,112.216,148.737,392,112.216,90.3528, 7,4.3243,3.0408, 120,70.5405,51.3002, 72,41.3514,30.1386, 120,70.5405,51.3002,220, 1788, 4752,0.3763,0.123, 1, 4,2.65,0.16, 4,2.5824,0, 8,5.3,0.3199, 8,5.1649,0,39.4245,2,0.8002,0,300,1488,0,0,70491,37,40,3576,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7277,606,286,441,151,7521,906,6615,28465,0.6681,4440,42609,13,7521,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile16,2,4,35,11,133,25,0,0,7,0,0,0,78,2694,41,0,219,0,70,190,41,25,168,0,606,0,4,1,-1,0,4,7,37,70,37,37,25, 404, 4152,0,10.2772,112.216,0.6757, 33,10.9189,9.6601, 30,10.9189,6.3176, 592,112.216,148.737,392,112.216,90.3528, 7,4.3243,3.0408, 120,70.5405,51.3002, 72,41.3514,30.1386, 120,70.5405,51.3002,220, 1788, 4752,0.3763,0.123, 1, 4,2.65,0.16, 4,2.5824,0, 8,5.3,0.3199, 8,5.1649,0,39.4245,2,0.8002,0,300,1488,0,0,70491,37,40,3576,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7277,606,286,441,151,7521,906,6615,28465,0.6681,4440,42609,13,20787,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile4,2,4,16,11,50,9,0,0,7,0,0,0,78,883,20,0,76,0,32,68,20,9,66,0,148,0,4,1,-1,0,4,7,16,32,16,16,9, 108, 976,0.1481,9.037, 61,0.5625, 13,6.75,3.3819, 12,6.75,2.8174, 208, 61,57.6802,136, 61,35.8748, 6,2.8125,2.5303, 80,35.25,32.9004, 48,20.25,18.8398, 80,35.25,32.9004,78, 424, 1120,0.3786,0.184, 1, 6,2.6667,0.1914, 5,2.5521,0.1105, 12,5.3333,0.3827, 10,5.1042,0.1105,18.3632,2,0.8607,0,72,352,0,0,7786,16,19,848,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7162,148,100,106,49,783,147,636,2720,0.7156,432,3801,12,783,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile13,2,4,25,11,87,16,0,0,7,0,0,0,78,1790,31,0,149,0,50,130,31,16,112,0,390,0,4,1,-1,0,4,7,27,50,27,27,16, 268, 2640,0.1007,9.8507,97.7778,0.5926, 23,9.9259,6.5145, 20,9.9259,4.7213, 376,97.7778,102.508,248,97.7778,64.9748, 7,3.7037,3.1129, 120,59.5556,51.7926, 72,34.6667,30.1699, 120,59.5556,51.7926,150, 1140, 3024,0.377,0.1316, 1, 4,2.4,0.1853, 4,2.3167,0, 8,4.8,0.3706, 8,4.6333,0,29.4053,2,0.8201,0,192,948,0,0,33522,27,30,2280,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7231,390,190,282,102,1998,306,1692,7248,0.6725,1140,10777,12,6738,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile15,2,4,35,11,133,25,0,0,7,0,0,0,78,2694,41,0,219,0,70,190,41,25,168,0,606,0,4,1,-1,0,4,7,37,70,37,37,25, 404, 4152,0,10.2772,112.216,0.6757, 33,10.9189,9.6601, 30,10.9189,6.3176, 592,112.216,148.737,392,112.216,90.3528, 7,4.3243,3.0408, 120,70.5405,51.3002, 72,41.3514,30.1386, 120,70.5405,51.3002,220, 1788, 4752,0.3763,0.123, 1, 4,2.65,0.16, 4,2.5824,0, 8,5.3,0.3199, 8,5.1649,0,39.4245,2,0.8002,0,300,1488,0,0,70491,37,40,3576,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7277,606,286,441,151,7521,906,6615,28465,0.6681,4440,42609,13,8995,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile0,2,4,16,11,50,9,0,0,7,0,0,0,78,883,20,0,76,0,32,68,20,9,66,0,148,0,4,1,-1,0,4,7,16,32,16,16,9, 108, 976,0.1481,9.037, 61,0.5625, 13,6.75,3.3819, 12,6.75,2.8174, 208, 61,57.6802,136, 61,35.8748, 6,2.8125,2.5303, 80,35.25,32.9004, 48,20.25,18.8398, 80,35.25,32.9004,78, 424, 1120,0.3786,0.184, 1, 6,2.6667,0.1914, 5,2.5521,0.1105, 12,5.3333,0.3827, 10,5.1042,0.1105,18.3632,2,0.8607,0,72,352,0,0,7786,16,19,848,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7162,148,100,106,49,783,147,636,2720,0.7156,432,3801,12,1517,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile9,2,4,24,11,86,16,0,0,7,0,0,0,78,1471,28,0,124,0,48,108,28,16,110,0,260,0,4,1,-1,0,4,7,24,48,24,24,16, 184, 1760,0.1304,9.5652,73.3333,0.6667, 21,7.6667,5.7783, 20,7.6667,4.1298, 376,73.3333,95.2237,248,73.3333,56.7646, 6,3.5,2.5331, 80,44.6667,33.4598, 48, 26,19.4936, 80,44.6667,33.4598,126, 760, 2016,0.377,0.1658, 1, 4,2.5083,0.1597, 4,2.4111,0, 8,5.0167,0.3194, 8,4.8222,0,26.4053,2,0.8201,0,128,632,0,0,20068,24,27,1520,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7231,260,168,188,80,3300,480,2820,12200,0.712,1900,17136,13,5232,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+floor-tile,pfile2,2,4,16,11,50,9,0,0,7,0,0,0,78,883,20,0,76,0,32,68,20,9,66,0,148,0,4,1,-1,0,4,7,16,32,16,16,9, 108, 976,0.1481,9.037, 61,0.5625, 13,6.75,3.3819, 12,6.75,2.8174, 208, 61,57.6802,136, 61,35.8748, 6,2.8125,2.5303, 80,35.25,32.9004, 48,20.25,18.8398, 80,35.25,32.9004,78, 424, 1120,0.3786,0.184, 1, 6,2.6667,0.1914, 5,2.5521,0.1105, 12,5.3333,0.3827, 10,5.1042,0.1105,18.3632,2,0.8607,0,72,352,0,0,7786,16,19,848,2,2,0,7,7,0,2.1429,1,5,-1,0,-1,-1,2.7143,2,3,0.2474,1.2857,1,2,0,1.5714,1,2,0,1.5714,1,2,0,0.7162,148,100,106,49,783,147,636,2720,0.7156,432,3801,12,1884,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512

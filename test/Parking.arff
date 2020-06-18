@@ -1,0 +1,586 @@
+@relation problem
+
+@attribute domain string
+
+@attribute task_name string
+
+@attribute requirements numeric
+
+@attribute types numeric
+
+@attribute objects numeric
+
+@attribute predicates numeric
+
+@attribute init numeric
+
+@attribute goal numeric
+
+@attribute actions numeric
+
+@attribute axioms numeric
+
+@attribute durative_actions numeric
+
+@attribute axiom_counter numeric
+
+@attribute function_symbols numeric
+
+@attribute function_administrator numeric
+
+@attribute generated_rules numeric
+
+@attribute final_queue_length numeric
+
+@attribute translator_variables numeric
+
+@attribute translator_derived_variables numeric
+
+@attribute translator_facts numeric
+
+@attribute translator_operators numeric
+
+@attribute mutex_key numeric
+
+@attribute strips_to_sas numeric
+
+@attribute ranges numeric
+
+@attribute goal_list numeric
+
+@attribute task_init numeric
+
+@attribute translator_act numeric
+
+@attribute translator_durative_act numeric
+
+@attribute translator_axiom numeric
+
+@attribute translator_num_axioms numeric
+
+@attribute translator_num_axioms_by_layer  numeric
+
+@attribute translator_max_num_layer  numeric
+
+@attribute translator_num_axiom_map numeric
+
+@attribute translator_const_num_axioms numeric
+
+@attribute translator_reachable numeric
+
+@attribute translator_groups numeric
+
+@attribute translator_mutex_group numeric
+
+@attribute translator_translation_key numeric
+
+@attribute numberVariablesCG numeric
+
+@attribute highLevelVariablesCG numeric
+
+@attribute totalEdgesCG numeric
+
+@attribute totalWeightCG numeric
+
+@attribute veRatio numeric
+
+@attribute weRatio numeric
+
+@attribute wvRatio numeric
+
+@attribute hvRatio numeric
+
+@attribute inputEdgeCGMax numeric
+
+@attribute inputEdgeCGAvg numeric
+
+@attribute inputEdgeCGStd numeric
+
+@attribute outputEdgeCGMax numeric
+
+@attribute outputEdgeCGAvg numeric
+
+@attribute outputEdgeCGStd numeric
+
+@attribute inputWeightCGMax numeric
+
+@attribute inputWeightCGAvg numeric
+
+@attribute inputWeightCGStd numeric
+
+@attribute outputWeightCGMax numeric
+
+@attribute outputWeightCGAvg numeric
+
+@attribute outputWeightCGStd numeric
+
+@attribute inputEdgeHVMax numeric
+
+@attribute inputEdgeHVAvg numeric
+
+@attribute inputEdgeHVStd numeric
+
+@attribute outputEdgeHVMax numeric
+
+@attribute outputEdgeHVAvg numeric
+
+@attribute outputEdgeHVStd numeric
+
+@attribute inputWeightHVMax numeric
+
+@attribute inputWeightHVAvg numeric
+
+@attribute inputWeightHVStd numeric
+
+@attribute outputWeightHVMax numeric
+
+@attribute outputWeightHVAvg numeric
+
+@attribute outputWeightHVStd numeric
+
+@attribute numberVariablesDTG numeric
+
+@attribute totalEdgesDTG numeric
+
+@attribute totalWeigthDTG numeric
+
+@attribute edVaRatioDTG numeric
+
+@attribute weEdRatioDTG numeric
+
+@attribute weVaRatioDTG numeric
+
+@attribute inputEdgeDTGMax numeric
+
+@attribute inputEdgeDTGAvg numeric
+
+@attribute inputEdgeDTGStd numeric
+
+@attribute outputEdgeDTGMax numeric
+
+@attribute outputEdgeDTGAvg numeric
+
+@attribute outputEdgeDTGStd numeric
+
+@attribute inputWeightDTGMax numeric
+
+@attribute inputWeightDTGAvg numeric
+
+@attribute inputWeightDTGStd numeric
+
+@attribute outputWeightDTGMax numeric
+
+@attribute outputWeightDTGAvg numeric
+
+@attribute outputWeightDTGStd numeric
+
+@attribute avg_level numeric
+
+@attribute avg_duration numeric
+
+@attribute str_level numeric
+
+@attribute str_duration numeric
+
+@attribute global_num_type_start numeric
+
+@attribute global_num_type_end numeric
+
+@attribute global_num_type_compressed numeric
+
+@attribute global_num_type_ax_red numeric
+
+@attribute global_total_level numeric
+
+@attribute global_min_level numeric
+
+@attribute global_max_level numeric
+
+@attribute global_total_duration numeric
+
+@attribute global_min_duration numeric
+
+@attribute global_max_duration numeric
+
+@attribute PDDL_assignment  numeric
+
+@attribute PDDL_durative_actions  numeric
+
+@attribute PDDL_type_numeric_duration  numeric
+
+@attribute PDDL_type_function_duration  numeric
+
+@attribute PDDL_avg_numeric_duration  numeric
+
+@attribute PDDL_min_numeric_duration  numeric
+
+@attribute PDDL_max_numeric_duration  numeric
+
+@attribute PDDL_functions  numeric
+
+@attribute PDDL_avg_arity  numeric
+
+@attribute PDDL_min_arity  numeric
+
+@attribute PDDL_max_arity  numeric
+
+@attribute PDDL_avg_at_start_precondition  numeric
+
+@attribute PDDL_min_at_start_precondition  numeric
+
+@attribute PDDL_max_at_start_precondition  numeric
+
+@attribute PDDL_std_at_start_precondition  numeric
+
+@attribute PDDL_avg_over_all_precondition  numeric
+
+@attribute PDDL_min_over_all_precondition  numeric
+
+@attribute PDDL_max_over_all_precondition  numeric
+
+@attribute PDDL_std_over_all_precondition  numeric
+
+@attribute PDDL_avg_at_start_postcondition  numeric
+
+@attribute PDDL_min_at_start_postcondition  numeric
+
+@attribute PDDL_max_at_start_postcondition  numeric
+
+@attribute PDDL_std_at_start_postcondition  numeric
+
+@attribute PDDL_avg_at_end_postcondition  numeric
+
+@attribute PDDL_min_at_end_postcondition  numeric
+
+@attribute PDDL_max_at_end_postcondition  numeric
+
+@attribute PDDL_std_at_end_postcondition  numeric
+
+@attribute SAT_RationofRelevantActions  numeric
+
+@attribute SAT_NumberofActon  numeric
+
+@attribute SAT_NumberofPropositions  numeric
+
+@attribute SAT_NumberofRelevantActons  numeric
+
+@attribute SAT_NumberofRelevantPropositions  numeric
+
+@attribute SAT_VariablesEnd  numeric
+
+@attribute SAT_propEnd  numeric
+
+@attribute SAT_actionEnd  numeric
+
+@attribute SAT_TotalMutexClauses  numeric
+
+@attribute SAT_ratioEnd  numeric
+
+@attribute SAT_TotalEventClauses  numeric
+
+@attribute SAT_TotalClauses  numeric
+
+@attribute SAT_numberFiles  numeric
+
+@attribute SAT_nvarsOrig  numeric
+
+@attribute SAT_nclausesOrig  numeric
+
+@attribute SAT_nvars  numeric
+
+@attribute SAT_nclauses  numeric
+
+@attribute SAT_reducedVars  numeric
+
+@attribute SAT_reducedClauses  numeric
+
+@attribute SAT_Pre-featuretime  numeric
+
+@attribute SAT_vars-clauses-ratio  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-mean  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-coeff-variation  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-min  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-max  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-entropy  numeric
+
+@attribute SAT_VCG-CLAUSE-mean  numeric
+
+@attribute SAT_VCG-CLAUSE-coeff-variation  numeric
+
+@attribute SAT_VCG-CLAUSE-min  numeric
+
+@attribute SAT_VCG-CLAUSE-max  numeric
+
+@attribute SAT_VCG-CLAUSE-entropy  numeric
+
+@attribute SAT_UNARY  numeric
+
+@attribute SAT_BINARY+  numeric
+
+@attribute SAT_TRINARY+  numeric
+
+@attribute SAT_Basic-featuretime  numeric
+
+@attribute SAT_VCG-VAR-mean  numeric
+
+@attribute SAT_VCG-VAR-coeff-variation  numeric
+
+@attribute SAT_VCG-VAR-min  numeric
+
+@attribute SAT_VCG-VAR-max  numeric
+
+@attribute SAT_VCG-VAR-entropy  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-mean  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-stdev  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-min  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-max  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-entropy  numeric
+
+@attribute SAT_HORNY-VAR-mean  numeric
+
+@attribute SAT_HORNY-VAR-coeff-variation  numeric
+
+@attribute SAT_HORNY-VAR-min  numeric
+
+@attribute SAT_HORNY-VAR-max  numeric
+
+@attribute SAT_HORNY-VAR-entropy  numeric
+
+@attribute SAT_horn-clauses-fraction  numeric
+
+@attribute SAT_VG-mean  numeric
+
+@attribute SAT_VG-coeff-variation  numeric
+
+@attribute SAT_VG-min  numeric
+
+@attribute SAT_VG-max  numeric
+
+@attribute SAT_KLB-featuretime  numeric
+
+@attribute SAT_CG-mean  numeric
+
+@attribute SAT_CG-coeff-variation  numeric
+
+@attribute SAT_CG-min  numeric
+
+@attribute SAT_CG-max  numeric
+
+@attribute SAT_CG-entropy  numeric
+
+@attribute SAT_cluster-coeff-mean  numeric
+
+@attribute SAT_cluster-coeff-coeff-variation  numeric
+
+@attribute SAT_cluster-coeff-min  numeric
+
+@attribute SAT_cluster-coeff-max  numeric
+
+@attribute SAT_cluster-coeff-entropy  numeric
+
+@attribute SAT_CG-featuretime  numeric
+
+@attribute SAT_DIAMETER-mean  numeric
+
+@attribute SAT_DIAMETER-coeff-variation  numeric
+
+@attribute SAT_DIAMETER-min  numeric
+
+@attribute SAT_DIAMETER-max  numeric
+
+@attribute SAT_DIAMETER-entropy  numeric
+
+@attribute SAT_DIAMETER-featuretime  numeric
+
+@attribute SAT_cl-num-mean  numeric
+
+@attribute SAT_cl-num-coeff-variation  numeric
+
+@attribute SAT_cl-num-min  numeric
+
+@attribute SAT_cl-num-max  numeric
+
+@attribute SAT_cl-num-q90  numeric
+
+@attribute SAT_cl-num-q10  numeric
+
+@attribute SAT_cl-num-q75  numeric
+
+@attribute SAT_cl-num-q25  numeric
+
+@attribute SAT_cl-num-q50  numeric
+
+@attribute SAT_cl-size-mean  numeric
+
+@attribute SAT_cl-size-coeff-variation  numeric
+
+@attribute SAT_cl-size-min  numeric
+
+@attribute SAT_cl-size-max  numeric
+
+@attribute SAT_cl-size-q90  numeric
+
+@attribute SAT_cl-size-q10  numeric
+
+@attribute SAT_cl-size-q75  numeric
+
+@attribute SAT_cl-size-q25  numeric
+
+@attribute SAT_cl-size-q50  numeric
+
+@attribute SAT_cl-featuretime  numeric
+
+@attribute SAT_SP-bias-mean  numeric
+
+@attribute SAT_SP-bias-coeff-variation  numeric
+
+@attribute SAT_SP-bias-min  numeric
+
+@attribute SAT_SP-bias-max  numeric
+
+@attribute SAT_SP-bias-q90  numeric
+
+@attribute SAT_SP-bias-q10  numeric
+
+@attribute SAT_SP-bias-q75  numeric
+
+@attribute SAT_SP-bias-q25  numeric
+
+@attribute SAT_SP-bias-q50  numeric
+
+@attribute SAT_SP-unconstraint-mean  numeric
+
+@attribute SAT_SP-unconstraint-coeff-variation  numeric
+
+@attribute SAT_SP-unconstraint-min  numeric
+
+@attribute SAT_SP-unconstraint-max  numeric
+
+@attribute SAT_SP-unconstraint-q90  numeric
+
+@attribute SAT_SP-unconstraint-q10  numeric
+
+@attribute SAT_SP-unconstraint-q75  numeric
+
+@attribute SAT_SP-unconstraint-q25  numeric
+
+@attribute SAT_SP-unconstraint-q50  numeric
+
+@attribute SAT_sp-featuretime  numeric
+
+@attribute SAT_vars-reduced-depth-1  numeric
+
+@attribute SAT_vars-reduced-depth-4  numeric
+
+@attribute SAT_vars-reduced-depth-16  numeric
+
+@attribute SAT_vars-reduced-depth-64  numeric
+
+@attribute SAT_vars-reduced-depth-256  numeric
+
+@attribute SAT_unit-featuretime  numeric
+
+@attribute SAT_LP_OBJ  numeric
+
+@attribute SAT_LPSLack-mean  numeric
+
+@attribute SAT_LPSLack-coeff-variation  numeric
+
+@attribute SAT_LPSLack-min  numeric
+
+@attribute SAT_LPSLack-max  numeric
+
+@attribute SAT_lpIntRatio  numeric
+
+@attribute SAT_lpTIME  numeric
+
+@attribute SAT_saps_BestSolution_Mean  numeric
+
+@attribute SAT_saps_BestSolution_CoeffVariance  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Mean  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_CoeffVariance  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Median  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Q.10  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Q.90  numeric
+
+@attribute SAT_saps_BestAvgImprovement_Mean  numeric
+
+@attribute SAT_saps_BestAvgImprovement_CoeffVariance  numeric
+
+@attribute SAT_saps_FirstLocalMinRatio_Mean  numeric
+
+@attribute SAT_saps_FirstLocalMinRatio_CoeffVariance  numeric
+
+@attribute SAT_ls-saps-featuretime  numeric
+
+@attribute SAT_gsat_BestSolution_Mean  numeric
+
+@attribute SAT_gsat_BestSolution_CoeffVariance  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Mean  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_CoeffVariance  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Median  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Q.10  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Q.90  numeric
+
+@attribute SAT_gsat_BestAvgImprovement_Mean  numeric
+
+@attribute SAT_gsat_BestAvgImprovement_CoeffVariance  numeric
+
+@attribute SAT_gsat_FirstLocalMinRatio_Mean  numeric
+
+@attribute SAT_gsat_FirstLocalMinRatio_CoeffVariance  numeric
+
+@attribute SAT_ls-gsat-featuretime  numeric
+
+@attribute SAT_lobjois-mean-depth-over-vars  numeric
+
+@attribute SAT_lobjois-log-num-nodes-over-vars  numeric
+
+@attribute SAT_lobjois-featuretime  numeric
+
+
+
+@data
+
+
+
+parking,parking,3,3,41,6,54,15,0,0,4,0,0,0,35,28648,74,0,739,0,71,674,74,15,95,0,25215,0,3,1,-1,0,3,4,71,71,71,71,15, 4550, 494430,0,108.666,6963.8,0.2113, 70,64.0845,11.4298, 70,64.0845,6.9155, 11714,6963.8,2895.61,12742,6963.8,3072.63, 42,8.8732,17.1447, 12742,2691.97,5201.38, 8284,1750.14,3381.59, 12742,2691.97,5201.38,727, 80040, 295770,0.2706,0, 1, 40, 40, 0, 40,27.3099, 0, 134,133.928,0, 160,84.8152, 0,71.7526,2,0.6499,0,24990,55050,0,0,5743080,71,73,160080,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,25215,671,25215,671,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,38,6,47,14,0,0,4,0,0,0,35,23209,69,0,647,0,66,587,69,14,85,0,20216,0,3,1,-1,0,3,4,66,66,66,66,14, 3926, 396466,0,100.985,6007.06,0.2121, 65,59.4848,10.6291, 65,59.4848,6.425, 10071,6007.06,2480.39,10948,6007.06,2636.43, 39,8.2727,15.9436, 10948,2322.3,4475.65, 7120,1510.3,2910.73, 10948,2322.3,4475.65,636, 64092, 236866,0.2706,0, 1, 37, 37, 0, 37,25.303, 0, 124,123.927,0, 148,78.5941, 0,66.7575,2,0.6498,0,20020,44072,0,0,4278624,66,68,128184,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,20216,584,20216,584,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,38,6,49,14,0,0,4,0,0,0,35,23209,69,0,647,0,66,587,69,14,87,0,20216,0,3,1,-1,0,3,4,66,66,66,66,14, 3926, 396466,0,100.985,6007.06,0.2121, 65,59.4848,10.6291, 65,59.4848,6.425, 10071,6007.06,2480.39,10948,6007.06,2636.43, 39,8.2727,15.9436, 10948,2322.3,4475.65, 7120,1510.3,2910.73, 10948,2322.3,4475.65,636, 64092, 236866,0.2706,0, 1, 37, 37, 0, 37,25.303, 0, 124,123.927,0, 148,78.5941, 0,66.7575,2,0.6498,0,20020,44072,0,0,4278624,66,68,128184,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,20216,584,20216,584,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,35,6,45,13,0,0,4,0,0,0,35,18508,64,0,561,0,61,506,64,13,80,0,15925,0,3,1,-1,0,3,4,61,61,61,61,13, 3348, 312364,0,93.2987,5120.72,0.2131, 60,54.8852,9.8282, 60,54.8852,5.9343, 8552,5120.72,2097.25,9290,5120.72,2233.64, 36,7.6721,14.7423, 9290,1979.84,3804.33, 6044,1288.07,2475.07, 9290,1979.84,3804.33,551, 50414, 186342,0.2705,0, 1, 34, 34, 0, 34,23.5082, 0, 114,113.927,0, 136,73, 0,61.7633,2,0.6496,0,15756,34658,0,0,3113734,61,63,100828,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,15925,503,15925,503,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,29,6,38,11,0,0,4,0,0,0,35,11104,54,0,407,0,51,362,54,11,67,0,9251,0,3,1,-1,0,3,4,51,51,51,51,11, 2330, 181522,0,77.9064,3559.25,0.2157, 50,45.6863,8.2259, 50,45.6863,4.9527, 5886,3559.25,1427.17,6382,3559.25,1528.33, 30,6.4706,12.3389, 6382,1376.51,2624.9, 4156,896.392,1709.35, 6382,1376.51,2624.9,399, 29172, 107866,0.2704,0, 1, 28, 28, 0, 28,19.4902, 0, 94,93.9256,0, 112,60.5531, 0,51.7783,2,0.6492,0,9130,20042,0,0,1510476,51,53,58344,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,9251,359,9251,359,140919,2154,138765,755275,0.8606,94105,877602,4,140919,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+parking,parking,3,3,41,6,53,15,0,0,4,0,0,0,35,28648,74,0,739,0,71,674,74,15,94,0,25215,0,3,1,-1,0,3,4,71,71,71,71,15, 4550, 494430,0,108.666,6963.8,0.2113, 70,64.0845,11.4298, 70,64.0845,6.9155, 11714,6963.8,2895.61,12742,6963.8,3072.63, 42,8.8732,17.1447, 12742,2691.97,5201.38, 8284,1750.14,3381.59, 12742,2691.97,5201.38,727, 80040, 295770,0.2706,0, 1, 40, 40, 0, 40,27.3099, 0, 134,133.928,0, 160,84.8152, 0,71.7526,2,0.6499,0,24990,55050,0,0,5743080,71,73,160080,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,25215,671,25215,671,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,38,6,48,14,0,0,4,0,0,0,35,23209,69,0,647,0,66,587,69,14,86,0,20216,0,3,1,-1,0,3,4,66,66,66,66,14, 3926, 396466,0,100.985,6007.06,0.2121, 65,59.4848,10.6291, 65,59.4848,6.425, 10071,6007.06,2480.39,10948,6007.06,2636.43, 39,8.2727,15.9436, 10948,2322.3,4475.65, 7120,1510.3,2910.73, 10948,2322.3,4475.65,636, 64092, 236866,0.2706,0, 1, 37, 37, 0, 37,25.303, 0, 124,123.927,0, 148,78.5941, 0,66.7575,2,0.6498,0,20020,44072,0,0,4278624,66,68,128184,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,20216,584,20216,584,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,35,6,45,13,0,0,4,0,0,0,35,18508,64,0,561,0,61,506,64,13,80,0,15925,0,3,1,-1,0,3,4,61,61,61,61,13, 3348, 312364,0,93.2987,5120.72,0.2131, 60,54.8852,9.8282, 60,54.8852,5.9343, 8552,5120.72,2097.25,9290,5120.72,2233.64, 36,7.6721,14.7423, 9290,1979.84,3804.33, 6044,1288.07,2475.07, 9290,1979.84,3804.33,551, 50414, 186342,0.2705,0, 1, 34, 34, 0, 34,23.5082, 0, 114,113.927,0, 136,73, 0,61.7633,2,0.6496,0,15756,34658,0,0,3113734,61,63,100828,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,15925,503,15925,503,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,41,6,53,15,0,0,4,0,0,0,35,28648,74,0,739,0,71,674,74,15,94,0,25215,0,3,1,-1,0,3,4,71,71,71,71,15, 4550, 494430,0,108.666,6963.8,0.2113, 70,64.0845,11.4298, 70,64.0845,6.9155, 11714,6963.8,2895.61,12742,6963.8,3072.63, 42,8.8732,17.1447, 12742,2691.97,5201.38, 8284,1750.14,3381.59, 12742,2691.97,5201.38,727, 80040, 295770,0.2706,0, 1, 40, 40, 0, 40,27.3099, 0, 134,133.928,0, 160,84.8152, 0,71.7526,2,0.6499,0,24990,55050,0,0,5743080,71,73,160080,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,25215,671,25215,671,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,32,6,38,12,0,0,4,0,0,0,35,14491,59,0,481,0,56,431,59,12,70,0,12288,0,3,1,-1,0,3,4,56,56,56,56,12, 2816, 241068,0,85.6065,4304.79,0.2143, 55,50.2857,9.0272, 55,50.2857,5.4436, 7157,4304.79,1746.17,7768,4304.79,1864.27, 33,7.0714,13.5408, 7768,1664.57,3187.41, 5056,1083.43,2074.61, 7768,1664.57,3187.41,472, 38832, 143556,0.2705,0, 1, 31, 31, 0, 31,21.5, 0, 104,103.926,0, 124,66.7835, 0,56.7701,2,0.6495,0,12144,26688,0,0,2204496,56,58,77664,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,12288,428,12288,428,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,26,6,36,10,0,0,4,0,0,0,35,8293,49,0,339,0,46,299,49,10,62,0,6760,0,3,1,-1,0,3,4,46,46,46,46,10, 1890, 132670,0,70.1958,2884.13,0.2174, 45,41.087,7.4245, 45,41.087,4.4616, 4739,2884.13,1140.26,5132,2884.13,1225.83, 27,5.8696,11.1367, 5132,1115.65,2116.8, 3344,726.957,1379.3, 5132,1115.65,2116.8,332, 21260, 78630,0.2704,0, 1, 25, 25, 0, 25,17.587, 0, 84,83.9247,0, 100,54.6421, 0,46.7883,2,0.6487,0,6660,14600,0,0,994720,46,48,42520,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,6760,296,6760,296,103176,1776,101400,550610,0.8601,68900,640186,3,82600,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+parking,parking,3,3,29,6,37,11,0,0,4,0,0,0,35,11104,54,0,407,0,51,362,54,11,66,0,9251,0,3,1,-1,0,3,4,51,51,51,51,11, 2330, 181522,0,77.9064,3559.25,0.2157, 50,45.6863,8.2259, 50,45.6863,4.9527, 5886,3559.25,1427.17,6382,3559.25,1528.33, 30,6.4706,12.3389, 6382,1376.51,2624.9, 4156,896.392,1709.35, 6382,1376.51,2624.9,399, 29172, 107866,0.2704,0, 1, 28, 28, 0, 28,19.4902, 0, 94,93.9256,0, 112,60.5531, 0,51.7783,2,0.6492,0,9130,20042,0,0,1510476,51,53,58344,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,9251,359,9251,359,140919,2154,138765,755275,0.8606,94105,877602,3,112807,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+parking,parking,3,3,38,6,45,14,0,0,4,0,0,0,35,23209,69,0,647,0,66,587,69,14,83,0,20216,0,3,1,-1,0,3,4,66,66,66,66,14, 3926, 396466,0,100.985,6007.06,0.2121, 65,59.4848,10.6291, 65,59.4848,6.425, 10071,6007.06,2480.39,10948,6007.06,2636.43, 39,8.2727,15.9436, 10948,2322.3,4475.65, 7120,1510.3,2910.73, 10948,2322.3,4475.65,636, 64092, 236866,0.2706,0, 1, 37, 37, 0, 37,25.303, 0, 124,123.927,0, 148,78.5941, 0,66.7575,2,0.6498,0,20020,44072,0,0,4278624,66,68,128184,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,20216,584,20216,584,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,32,6,41,12,0,0,4,0,0,0,35,14491,59,0,481,0,56,431,59,12,73,0,12288,0,3,1,-1,0,3,4,56,56,56,56,12, 2816, 241068,0,85.6065,4304.79,0.2143, 55,50.2857,9.0272, 55,50.2857,5.4436, 7157,4304.79,1746.17,7768,4304.79,1864.27, 33,7.0714,13.5408, 7768,1664.57,3187.41, 5056,1083.43,2074.61, 7768,1664.57,3187.41,472, 38832, 143556,0.2705,0, 1, 31, 31, 0, 31,21.5, 0, 104,103.926,0, 124,66.7835, 0,56.7701,2,0.6495,0,12144,26688,0,0,2204496,56,58,77664,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,12288,428,12288,428,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,35,6,45,13,0,0,4,0,0,0,35,18508,64,0,561,0,61,506,64,13,80,0,15925,0,3,1,-1,0,3,4,61,61,61,61,13, 3348, 312364,0,93.2987,5120.72,0.2131, 60,54.8852,9.8282, 60,54.8852,5.9343, 8552,5120.72,2097.25,9290,5120.72,2233.64, 36,7.6721,14.7423, 9290,1979.84,3804.33, 6044,1288.07,2475.07, 9290,1979.84,3804.33,551, 50414, 186342,0.2705,0, 1, 34, 34, 0, 34,23.5082, 0, 114,113.927,0, 136,73, 0,61.7633,2,0.6496,0,15756,34658,0,0,3113734,61,63,100828,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,15925,503,15925,503,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,26,6,33,10,0,0,4,0,0,0,35,8293,49,0,339,0,46,299,49,10,59,0,6760,0,3,1,-1,0,3,4,46,46,46,46,10, 1890, 132670,0,70.1958,2884.13,0.2174, 45,41.087,7.4245, 45,41.087,4.4616, 4739,2884.13,1140.26,5132,2884.13,1225.83, 27,5.8696,11.1367, 5132,1115.65,2116.8, 3344,726.957,1379.3, 5132,1115.65,2116.8,332, 21260, 78630,0.2704,0, 1, 25, 25, 0, 25,17.587, 0, 84,83.9247,0, 100,54.6421, 0,46.7883,2,0.6487,0,6660,14600,0,0,994720,46,48,42520,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,6760,296,6760,296,123752,2072,121680,660732,0.8609,82680,767483,5,103176,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+parking,parking,3,3,32,6,41,12,0,0,4,0,0,0,35,14491,59,0,481,0,56,431,59,12,73,0,12288,0,3,1,-1,0,3,4,56,56,56,56,12, 2816, 241068,0,85.6065,4304.79,0.2143, 55,50.2857,9.0272, 55,50.2857,5.4436, 7157,4304.79,1746.17,7768,4304.79,1864.27, 33,7.0714,13.5408, 7768,1664.57,3187.41, 5056,1083.43,2074.61, 7768,1664.57,3187.41,472, 38832, 143556,0.2705,0, 1, 31, 31, 0, 31,21.5, 0, 104,103.926,0, 124,66.7835, 0,56.7701,2,0.6495,0,12144,26688,0,0,2204496,56,58,77664,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,12288,428,12288,428,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,38,6,45,14,0,0,4,0,0,0,35,23209,69,0,647,0,66,587,69,14,83,0,20216,0,3,1,-1,0,3,4,66,66,66,66,14, 3926, 396466,0,100.985,6007.06,0.2121, 65,59.4848,10.6291, 65,59.4848,6.425, 10071,6007.06,2480.39,10948,6007.06,2636.43, 39,8.2727,15.9436, 10948,2322.3,4475.65, 7120,1510.3,2910.73, 10948,2322.3,4475.65,636, 64092, 236866,0.2706,0, 1, 37, 37, 0, 37,25.303, 0, 124,123.927,0, 148,78.5941, 0,66.7575,2,0.6498,0,20020,44072,0,0,4278624,66,68,128184,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,20216,584,20216,584,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+parking,parking,3,3,26,6,31,10,0,0,4,0,0,0,35,8293,49,0,339,0,46,299,49,10,57,0,6760,0,3,1,-1,0,3,4,46,46,46,46,10, 1890, 132670,0,70.1958,2884.13,0.2174, 45,41.087,7.4245, 45,41.087,4.4616, 4739,2884.13,1140.26,5132,2884.13,1225.83, 27,5.8696,11.1367, 5132,1115.65,2116.8, 3344,726.957,1379.3, 5132,1115.65,2116.8,332, 21260, 78630,0.2704,0, 1, 25, 25, 0, 25,17.587, 0, 84,83.9247,0, 100,54.6421, 0,46.7883,2,0.6487,0,6660,14600,0,0,994720,46,48,42520,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,6760,296,6760,296,123752,2072,121680,660732,0.8609,82680,767483,5,82600,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+parking,parking,3,3,29,6,40,11,0,0,4,0,0,0,35,11104,54,0,407,0,51,362,54,11,69,0,9251,0,3,1,-1,0,3,4,51,51,51,51,11, 2330, 181522,0,77.9064,3559.25,0.2157, 50,45.6863,8.2259, 50,45.6863,4.9527, 5886,3559.25,1427.17,6382,3559.25,1528.33, 30,6.4706,12.3389, 6382,1376.51,2624.9, 4156,896.392,1709.35, 6382,1376.51,2624.9,399, 29172, 107866,0.2704,0, 1, 28, 28, 0, 28,19.4902, 0, 94,93.9256,0, 112,60.5531, 0,51.7783,2,0.6492,0,9130,20042,0,0,1510476,51,53,58344,2,2,4,4,4,0,2.0,1,3,-1,0,-1,-1,3.5,3,4,0,0,0,0,0,2.25,2,3,0,2.25,2,3,0,1.0,9251,359,9251,359,112807,1795,111012,604220,0.8594,75284,703084,3,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?

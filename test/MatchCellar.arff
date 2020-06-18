@@ -1,0 +1,586 @@
+@relation problem
+
+@attribute domain string
+
+@attribute task_name string
+
+@attribute requirements numeric
+
+@attribute types numeric
+
+@attribute objects numeric
+
+@attribute predicates numeric
+
+@attribute init numeric
+
+@attribute goal numeric
+
+@attribute actions numeric
+
+@attribute axioms numeric
+
+@attribute durative_actions numeric
+
+@attribute axiom_counter numeric
+
+@attribute function_symbols numeric
+
+@attribute function_administrator numeric
+
+@attribute generated_rules numeric
+
+@attribute final_queue_length numeric
+
+@attribute translator_variables numeric
+
+@attribute translator_derived_variables numeric
+
+@attribute translator_facts numeric
+
+@attribute translator_operators numeric
+
+@attribute mutex_key numeric
+
+@attribute strips_to_sas numeric
+
+@attribute ranges numeric
+
+@attribute goal_list numeric
+
+@attribute task_init numeric
+
+@attribute translator_act numeric
+
+@attribute translator_durative_act numeric
+
+@attribute translator_axiom numeric
+
+@attribute translator_num_axioms numeric
+
+@attribute translator_num_axioms_by_layer  numeric
+
+@attribute translator_max_num_layer  numeric
+
+@attribute translator_num_axiom_map numeric
+
+@attribute translator_const_num_axioms numeric
+
+@attribute translator_reachable numeric
+
+@attribute translator_groups numeric
+
+@attribute translator_mutex_group numeric
+
+@attribute translator_translation_key numeric
+
+@attribute numberVariablesCG numeric
+
+@attribute highLevelVariablesCG numeric
+
+@attribute totalEdgesCG numeric
+
+@attribute totalWeightCG numeric
+
+@attribute veRatio numeric
+
+@attribute weRatio numeric
+
+@attribute wvRatio numeric
+
+@attribute hvRatio numeric
+
+@attribute inputEdgeCGMax numeric
+
+@attribute inputEdgeCGAvg numeric
+
+@attribute inputEdgeCGStd numeric
+
+@attribute outputEdgeCGMax numeric
+
+@attribute outputEdgeCGAvg numeric
+
+@attribute outputEdgeCGStd numeric
+
+@attribute inputWeightCGMax numeric
+
+@attribute inputWeightCGAvg numeric
+
+@attribute inputWeightCGStd numeric
+
+@attribute outputWeightCGMax numeric
+
+@attribute outputWeightCGAvg numeric
+
+@attribute outputWeightCGStd numeric
+
+@attribute inputEdgeHVMax numeric
+
+@attribute inputEdgeHVAvg numeric
+
+@attribute inputEdgeHVStd numeric
+
+@attribute outputEdgeHVMax numeric
+
+@attribute outputEdgeHVAvg numeric
+
+@attribute outputEdgeHVStd numeric
+
+@attribute inputWeightHVMax numeric
+
+@attribute inputWeightHVAvg numeric
+
+@attribute inputWeightHVStd numeric
+
+@attribute outputWeightHVMax numeric
+
+@attribute outputWeightHVAvg numeric
+
+@attribute outputWeightHVStd numeric
+
+@attribute numberVariablesDTG numeric
+
+@attribute totalEdgesDTG numeric
+
+@attribute totalWeigthDTG numeric
+
+@attribute edVaRatioDTG numeric
+
+@attribute weEdRatioDTG numeric
+
+@attribute weVaRatioDTG numeric
+
+@attribute inputEdgeDTGMax numeric
+
+@attribute inputEdgeDTGAvg numeric
+
+@attribute inputEdgeDTGStd numeric
+
+@attribute outputEdgeDTGMax numeric
+
+@attribute outputEdgeDTGAvg numeric
+
+@attribute outputEdgeDTGStd numeric
+
+@attribute inputWeightDTGMax numeric
+
+@attribute inputWeightDTGAvg numeric
+
+@attribute inputWeightDTGStd numeric
+
+@attribute outputWeightDTGMax numeric
+
+@attribute outputWeightDTGAvg numeric
+
+@attribute outputWeightDTGStd numeric
+
+@attribute avg_level numeric
+
+@attribute avg_duration numeric
+
+@attribute str_level numeric
+
+@attribute str_duration numeric
+
+@attribute global_num_type_start numeric
+
+@attribute global_num_type_end numeric
+
+@attribute global_num_type_compressed numeric
+
+@attribute global_num_type_ax_red numeric
+
+@attribute global_total_level numeric
+
+@attribute global_min_level numeric
+
+@attribute global_max_level numeric
+
+@attribute global_total_duration numeric
+
+@attribute global_min_duration numeric
+
+@attribute global_max_duration numeric
+
+@attribute PDDL_assignment  numeric
+
+@attribute PDDL_durative_actions  numeric
+
+@attribute PDDL_type_numeric_duration  numeric
+
+@attribute PDDL_type_function_duration  numeric
+
+@attribute PDDL_avg_numeric_duration  numeric
+
+@attribute PDDL_min_numeric_duration  numeric
+
+@attribute PDDL_max_numeric_duration  numeric
+
+@attribute PDDL_functions  numeric
+
+@attribute PDDL_avg_arity  numeric
+
+@attribute PDDL_min_arity  numeric
+
+@attribute PDDL_max_arity  numeric
+
+@attribute PDDL_avg_at_start_precondition  numeric
+
+@attribute PDDL_min_at_start_precondition  numeric
+
+@attribute PDDL_max_at_start_precondition  numeric
+
+@attribute PDDL_std_at_start_precondition  numeric
+
+@attribute PDDL_avg_over_all_precondition  numeric
+
+@attribute PDDL_min_over_all_precondition  numeric
+
+@attribute PDDL_max_over_all_precondition  numeric
+
+@attribute PDDL_std_over_all_precondition  numeric
+
+@attribute PDDL_avg_at_start_postcondition  numeric
+
+@attribute PDDL_min_at_start_postcondition  numeric
+
+@attribute PDDL_max_at_start_postcondition  numeric
+
+@attribute PDDL_std_at_start_postcondition  numeric
+
+@attribute PDDL_avg_at_end_postcondition  numeric
+
+@attribute PDDL_min_at_end_postcondition  numeric
+
+@attribute PDDL_max_at_end_postcondition  numeric
+
+@attribute PDDL_std_at_end_postcondition  numeric
+
+@attribute SAT_RationofRelevantActions  numeric
+
+@attribute SAT_NumberofActon  numeric
+
+@attribute SAT_NumberofPropositions  numeric
+
+@attribute SAT_NumberofRelevantActons  numeric
+
+@attribute SAT_NumberofRelevantPropositions  numeric
+
+@attribute SAT_VariablesEnd  numeric
+
+@attribute SAT_propEnd  numeric
+
+@attribute SAT_actionEnd  numeric
+
+@attribute SAT_TotalMutexClauses  numeric
+
+@attribute SAT_ratioEnd  numeric
+
+@attribute SAT_TotalEventClauses  numeric
+
+@attribute SAT_TotalClauses  numeric
+
+@attribute SAT_numberFiles  numeric
+
+@attribute SAT_nvarsOrig  numeric
+
+@attribute SAT_nclausesOrig  numeric
+
+@attribute SAT_nvars  numeric
+
+@attribute SAT_nclauses  numeric
+
+@attribute SAT_reducedVars  numeric
+
+@attribute SAT_reducedClauses  numeric
+
+@attribute SAT_Pre-featuretime  numeric
+
+@attribute SAT_vars-clauses-ratio  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-mean  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-coeff-variation  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-min  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-max  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-entropy  numeric
+
+@attribute SAT_VCG-CLAUSE-mean  numeric
+
+@attribute SAT_VCG-CLAUSE-coeff-variation  numeric
+
+@attribute SAT_VCG-CLAUSE-min  numeric
+
+@attribute SAT_VCG-CLAUSE-max  numeric
+
+@attribute SAT_VCG-CLAUSE-entropy  numeric
+
+@attribute SAT_UNARY  numeric
+
+@attribute SAT_BINARY+  numeric
+
+@attribute SAT_TRINARY+  numeric
+
+@attribute SAT_Basic-featuretime  numeric
+
+@attribute SAT_VCG-VAR-mean  numeric
+
+@attribute SAT_VCG-VAR-coeff-variation  numeric
+
+@attribute SAT_VCG-VAR-min  numeric
+
+@attribute SAT_VCG-VAR-max  numeric
+
+@attribute SAT_VCG-VAR-entropy  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-mean  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-stdev  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-min  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-max  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-entropy  numeric
+
+@attribute SAT_HORNY-VAR-mean  numeric
+
+@attribute SAT_HORNY-VAR-coeff-variation  numeric
+
+@attribute SAT_HORNY-VAR-min  numeric
+
+@attribute SAT_HORNY-VAR-max  numeric
+
+@attribute SAT_HORNY-VAR-entropy  numeric
+
+@attribute SAT_horn-clauses-fraction  numeric
+
+@attribute SAT_VG-mean  numeric
+
+@attribute SAT_VG-coeff-variation  numeric
+
+@attribute SAT_VG-min  numeric
+
+@attribute SAT_VG-max  numeric
+
+@attribute SAT_KLB-featuretime  numeric
+
+@attribute SAT_CG-mean  numeric
+
+@attribute SAT_CG-coeff-variation  numeric
+
+@attribute SAT_CG-min  numeric
+
+@attribute SAT_CG-max  numeric
+
+@attribute SAT_CG-entropy  numeric
+
+@attribute SAT_cluster-coeff-mean  numeric
+
+@attribute SAT_cluster-coeff-coeff-variation  numeric
+
+@attribute SAT_cluster-coeff-min  numeric
+
+@attribute SAT_cluster-coeff-max  numeric
+
+@attribute SAT_cluster-coeff-entropy  numeric
+
+@attribute SAT_CG-featuretime  numeric
+
+@attribute SAT_DIAMETER-mean  numeric
+
+@attribute SAT_DIAMETER-coeff-variation  numeric
+
+@attribute SAT_DIAMETER-min  numeric
+
+@attribute SAT_DIAMETER-max  numeric
+
+@attribute SAT_DIAMETER-entropy  numeric
+
+@attribute SAT_DIAMETER-featuretime  numeric
+
+@attribute SAT_cl-num-mean  numeric
+
+@attribute SAT_cl-num-coeff-variation  numeric
+
+@attribute SAT_cl-num-min  numeric
+
+@attribute SAT_cl-num-max  numeric
+
+@attribute SAT_cl-num-q90  numeric
+
+@attribute SAT_cl-num-q10  numeric
+
+@attribute SAT_cl-num-q75  numeric
+
+@attribute SAT_cl-num-q25  numeric
+
+@attribute SAT_cl-num-q50  numeric
+
+@attribute SAT_cl-size-mean  numeric
+
+@attribute SAT_cl-size-coeff-variation  numeric
+
+@attribute SAT_cl-size-min  numeric
+
+@attribute SAT_cl-size-max  numeric
+
+@attribute SAT_cl-size-q90  numeric
+
+@attribute SAT_cl-size-q10  numeric
+
+@attribute SAT_cl-size-q75  numeric
+
+@attribute SAT_cl-size-q25  numeric
+
+@attribute SAT_cl-size-q50  numeric
+
+@attribute SAT_cl-featuretime  numeric
+
+@attribute SAT_SP-bias-mean  numeric
+
+@attribute SAT_SP-bias-coeff-variation  numeric
+
+@attribute SAT_SP-bias-min  numeric
+
+@attribute SAT_SP-bias-max  numeric
+
+@attribute SAT_SP-bias-q90  numeric
+
+@attribute SAT_SP-bias-q10  numeric
+
+@attribute SAT_SP-bias-q75  numeric
+
+@attribute SAT_SP-bias-q25  numeric
+
+@attribute SAT_SP-bias-q50  numeric
+
+@attribute SAT_SP-unconstraint-mean  numeric
+
+@attribute SAT_SP-unconstraint-coeff-variation  numeric
+
+@attribute SAT_SP-unconstraint-min  numeric
+
+@attribute SAT_SP-unconstraint-max  numeric
+
+@attribute SAT_SP-unconstraint-q90  numeric
+
+@attribute SAT_SP-unconstraint-q10  numeric
+
+@attribute SAT_SP-unconstraint-q75  numeric
+
+@attribute SAT_SP-unconstraint-q25  numeric
+
+@attribute SAT_SP-unconstraint-q50  numeric
+
+@attribute SAT_sp-featuretime  numeric
+
+@attribute SAT_vars-reduced-depth-1  numeric
+
+@attribute SAT_vars-reduced-depth-4  numeric
+
+@attribute SAT_vars-reduced-depth-16  numeric
+
+@attribute SAT_vars-reduced-depth-64  numeric
+
+@attribute SAT_vars-reduced-depth-256  numeric
+
+@attribute SAT_unit-featuretime  numeric
+
+@attribute SAT_LP_OBJ  numeric
+
+@attribute SAT_LPSLack-mean  numeric
+
+@attribute SAT_LPSLack-coeff-variation  numeric
+
+@attribute SAT_LPSLack-min  numeric
+
+@attribute SAT_LPSLack-max  numeric
+
+@attribute SAT_lpIntRatio  numeric
+
+@attribute SAT_lpTIME  numeric
+
+@attribute SAT_saps_BestSolution_Mean  numeric
+
+@attribute SAT_saps_BestSolution_CoeffVariance  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Mean  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_CoeffVariance  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Median  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Q.10  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Q.90  numeric
+
+@attribute SAT_saps_BestAvgImprovement_Mean  numeric
+
+@attribute SAT_saps_BestAvgImprovement_CoeffVariance  numeric
+
+@attribute SAT_saps_FirstLocalMinRatio_Mean  numeric
+
+@attribute SAT_saps_FirstLocalMinRatio_CoeffVariance  numeric
+
+@attribute SAT_ls-saps-featuretime  numeric
+
+@attribute SAT_gsat_BestSolution_Mean  numeric
+
+@attribute SAT_gsat_BestSolution_CoeffVariance  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Mean  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_CoeffVariance  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Median  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Q.10  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Q.90  numeric
+
+@attribute SAT_gsat_BestAvgImprovement_Mean  numeric
+
+@attribute SAT_gsat_BestAvgImprovement_CoeffVariance  numeric
+
+@attribute SAT_gsat_FirstLocalMinRatio_Mean  numeric
+
+@attribute SAT_gsat_FirstLocalMinRatio_CoeffVariance  numeric
+
+@attribute SAT_ls-gsat-featuretime  numeric
+
+@attribute SAT_lobjois-mean-depth-over-vars  numeric
+
+@attribute SAT_lobjois-log-num-nodes-over-vars  numeric
+
+@attribute SAT_lobjois-featuretime  numeric
+
+
+
+@data
+
+
+
+matchcellar,p26,2,3,56,5,27,30,0,0,2,0,0,0,12,1170,59,0,138,0,83,85,59,30,83,0,806,0,2,1,-1,0,2,2,57,83,57,57,30, 866, 5460,0,6.3049,95.7895,0.5263, 31,15.193,14.9613, 56,15.193,14.4179, 1560,95.7895,196.563,3120,95.7895,405.962, 1,0.5263,0.4993, 78,41.0526,38.9459, 52,27.3684,25.964, 78,41.0526,38.9459,138, 832, 2392,0.3478,0.1659, 1, 26, -1,1.6917, 13, -1,0.8458, 26, -1,1.6917, 13,-1,0.8458,57.9375,2,0.2421,0,0,832,0,0,48204,57,58,1664,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,806,83,806,83,22592,830,21762,39420,0.714,15418,55211,9,15089,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p32,2,3,68,5,33,36,0,0,2,0,0,0,12,1626,71,0,168,0,101,103,71,36,101,0,1184,0,2,1,-1,0,2,2,69,101,69,69,36, 1256, 8064,0,6.4204,116.87,0.5217, 37,18.2029,17.9682, 68,18.2029,17.4311, 2304,116.87,266.123,4608,116.87,546.703, 1,0.5217,0.4995, 96,0,47.9546, 64,33.3913,31.9697, 96,0,47.9546,168, 1216, 3520,0.3455,0.1382, 1, 32, -1,1.8983, 16, -1,0.9491, 32, -1,1.8983, 16,-1,0.9491,69.9474,2,0.2233,0,0,1216,0,0,85056,69,70,2432,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,1184,101,1184,101,14713,505,14208,25392,0.7124,9952,35641,2,14713,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p29,2,3,62,5,30,33,0,0,2,0,0,0,12,1389,65,0,153,0,92,94,65,33,92,0,986,0,2,1,-1,0,2,2,63,92,63,63,33, 1052, 6699,0,6.3679,106.333,0.5238, 34,16.6984,16.4651, 62,16.6984,15.9251, 1914,106.333,230.469,3828,106.333,474.61, 1,0.5238,0.4994, 87,45.5714,43.4507, 58,30.381,28.9671, 87,45.5714,43.4507,153, 1015, 2929,0.3465,0.1507, 1, 29, -1,1.7978, 15, -1,0.9299, 29, -1,1.7978, 15,-1,0.9299,63.9429,2,0.2321,0,0,1015,0,0,64902,63,64,2030,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,986,92,986,92,12292,460,11832,21276,0.7123,8323,29869,2,12292,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p24,2,3,52,5,25,28,0,0,2,0,0,0,12,1034,55,0,128,0,77,79,55,28,77,0,696,0,2,1,-1,0,2,2,53,77,53,53,28, 752, 4704,0,6.2553,88.7547,0.5283, 29,14.1887,13.9582, 52,14.1887,13.4123, 1344,88.7547,174.977,2688,88.7547,362.2, 1,0.5283,0.4992, 72,38.0377,35.9423, 48,25.3585,23.9615, 72,38.0377,35.9423,128, 720, 2064,0.3488,0.1778, 1, 24, -1,1.6172, 12, -1,0.8086, 24, -1,1.6172, 12,-1,0.8086,53.9333,2,0.2494,0,0,720,0,0,38832,53,54,1440,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,696,77,696,77,23892,924,22968,41844,0.7143,16344,58581,11,4407,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p31,2,3,66,5,32,35,0,0,2,0,0,0,12,1545,69,0,163,0,98,100,69,35,98,0,1116,0,2,1,-1,0,2,2,67,98,67,67,35, 1186, 7595,0,6.4039,113.358,0.5224, 36,17.7015,17.4673, 66,17.7015,16.9292, 2170,113.358,254.05,4340,113.358,522.299, 1,0.5224,0.4995, 93,48.5821,46.4534, 62,32.3881,30.9689, 93,48.5821,46.4534,163, 1147, 3317,0.3458,0.1421, 1, 31, -1,1.8654, 16, -1,0.9628, 31, -1,1.8654, 16,-1,0.9628,67.9459,2,0.2261,0,0,1147,0,0,77934,67,68,2294,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,1116,98,1116,98,13882,490,13392,23980,0.7124,9393,33661,2,13882,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p20,2,3,44,5,21,24,0,0,2,0,0,0,12,786,47,0,108,0,65,67,47,24,65,0,500,0,2,1,-1,0,2,2,45,65,45,45,24, 548, 3360,0,6.1314,74.6667,0.5333, 25,12.1778,11.9504, 44,12.1778,11.3984, 960,74.6667,134.396,1920,74.6667,279.759, 1,0.5333,0.4989, 60, 32,29.9333, 40,21.3333,19.9555, 60, 32,29.9333,108, 520, 1480,0.3514,0.2077, 1, 20, -1,1.4576, 10, -1,0.7288, 20, -1,1.4576, 10,-1,0.7288,45.9231,2,0.2665,0,0,520,0,0,23880,45,46,1040,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,500,65,500,65,17280,780,16500,30492,0.7144,11860,42681,11,17280,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p18,2,3,40,5,19,22,0,0,2,0,0,0,12,674,43,0,98,0,59,61,43,22,59,0,414,0,2,1,-1,0,2,2,41,59,41,41,22, 458, 2772,0,6.0524,67.6098,0.5366, 23,11.1707,10.9453, 40,11.1707,10.3897, 792,67.6098,115.481,1584,67.6098,241.226, 1,0.5366,0.4987, 54,28.9756,26.9276, 36,19.3171,17.9517, 54,28.9756,26.9276,98, 432, 1224,0.3529,0.2269, 1, 18, -1,1.3713, 9, -1,0.6856, 18, -1,1.3713, 9,-1,0.6856,41.9167,2,0.2764,0,0,432,0,0,18108,41,42,864,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,414,59,414,59,14370,708,13662,25476,0.7145,9882,35655,11,11768,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p16,2,3,36,5,17,20,0,0,2,0,0,0,12,570,39,0,88,0,53,55,39,20,53,0,336,0,2,1,-1,0,2,2,37,53,37,37,20, 376, 2240,0,5.9574,60.5405,0.5405, 21,10.1622,9.939, 36,10.1622,9.3794, 640,60.5405,97.5468,1280,60.5405,204.6, 1,0.5405,0.4984, 48,25.9459,23.921, 32,17.2973,15.9473, 48,25.9459,23.921,88, 352, 992,0.3548,0.25, 1, 16, -1,1.2796, 8, -1,0.6398, 16, -1,1.2796, 8,-1,0.6398,37.9091,2,0.2875,0,0,352,0,0,13344,37,38,704,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,336,53,336,53,11724,636,11088,20900,0.7147,8080,29245,11,9602,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p33,2,3,70,5,34,37,0,0,2,0,0,0,12,1709,73,0,173,0,104,106,73,37,104,0,1254,0,2,1,-1,0,2,2,71,104,71,71,37, 1328, 8547,0,6.436,120.38,0.5211, 38,18.7042,18.4692, 70,18.7042,17.9329, 2442,120.38,278.382,4884,120.38,571.472, 1,0.5211,0.4996, 99,51.5915,49.4558, 66,34.3944,32.9705, 99,51.5915,49.4558,173, 1287, 3729,0.3451,0.1344, 1, 33, -1,1.9306, 17, -1,0.9946, 33, -1,1.9306, 17,-1,0.9946,71.9487,2,0.2206,0,0,1287,0,0,92598,71,72,2574,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,1254,104,1254,104,15568,520,15048,26844,0.7125,10527,37677,2,3970,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p27,2,3,58,5,28,31,0,0,2,0,0,0,12,1241,61,0,143,0,86,88,61,31,86,0,864,0,2,1,-1,0,2,2,59,86,59,59,31, 926, 5859,0,6.3272,99.3051,0.5254, 32,15.6949,15.4626, 58,15.6949,14.9204, 1674,99.3051,207.665,3348,99.3051,428.451, 1,0.5254,0.4994, 81,42.5593,40.4476, 54,28.3729,26.9651, 81,42.5593,40.4476,143, 891, 2565,0.3474,0.1605, 1, 27, -1,1.7278, 14, -1,0.8959, 27, -1,1.7278, 14,-1,0.8959,59.9394,2,0.2386,0,0,891,0,0,53406,59,60,1782,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,864,86,864,86,21510,774,20736,37464,0.7138,14661,52485,8,2764,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p15,2,3,34,5,16,19,0,0,2,0,0,0,12,521,37,0,83,0,50,52,37,19,50,0,300,0,2,1,-1,0,2,2,35,50,35,35,19, 338, 1995,0.1036,5.9024, 57,0.5429, 20,9.6571,9.4353, 34,9.6571,8.8735, 570, 57,88.9655,1140, 57,187.034, 1,0.5429,0.4982, 45,24.4286,22.4172, 30,16.2857,14.9448, 45,24.4286,22.4172,83, 315, 885,0.3559,0.2635, 1, 15, -1,1.2315, 8, -1,0.6568, 15, -1,1.2315, 8,-1,0.6568,35.9048,2,0.2935,0,0,315,0,0,11310,35,36,630,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,300,50,300,50,10500,600,9900,18777,0.7147,7245,26271,11,2900,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p25,2,3,54,5,26,29,0,0,2,0,0,0,12,1101,57,0,133,0,80,82,57,29,80,0,750,0,2,1,-1,0,2,2,55,80,55,55,29, 808, 5075,0,6.2809,92.2727,0.5273, 30,14.6909,14.4598, 54,14.6909,13.9152, 1450,92.2727,185.665,2900,92.2727,383.876, 1,0.5273,0.4993, 75,39.5455,37.4442, 50,26.3636,24.9628, 75,39.5455,37.4442,133, 775, 2225,0.3483,0.1716, 1, 25, -1,1.6548, 13, -1,0.8605, 25, -1,1.6548, 13,-1,0.8605,55.9355,2,0.2457,0,0,775,0,0,43350,55,56,1550,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,750,80,750,80,25710,960,24750,44957,0.7143,17575,62941,11,2410,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p28,2,3,60,5,29,32,0,0,2,0,0,0,12,1314,63,0,148,0,89,91,63,32,89,0,924,0,2,1,-1,0,2,2,61,89,61,61,32, 988, 6272,0,6.3482,102.82,0.5246, 33,16.1967,15.9639, 60,16.1967,15.4228, 1792,102.82,218.968,3584,102.82,451.336, 1,0.5246,0.4994, 84,44.0656,41.9492, 56,29.377,27.9661, 84,44.0656,41.9492,148, 952, 2744,0.3469,0.1555, 1, 28, -1,1.7631, 14, -1,0.8816, 28, -1,1.7631, 14,-1,0.8816,61.9412,2,0.2353,0,0,952,0,0,58968,61,62,1904,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,924,89,924,89,11533,445,11088,19984,0.7123,7812,28057,2,11533,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p22,2,3,48,5,23,26,0,0,2,0,0,0,12,906,51,0,118,0,71,73,51,26,71,0,594,0,2,1,-1,0,2,2,49,71,49,49,26, 646, 4004,0,6.1981,81.7143,0.5306, 27,13.1837,12.9547, 48,13.1837,12.4058, 1144,81.7143,154.242,2288,81.7143,320.109, 1,0.5306,0.4991, 66,35.0204,32.9381, 44,23.3469,21.9587, 66,35.0204,32.9381,118, 616, 1760,0.35,0.1916, 1, 22, -1,1.5394, 11, -1,0.7697, 22, -1,1.5394, 11,-1,0.7697,49.9286,2,0.2575,0,0,616,0,0,30756,49,50,1232,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,594,71,594,71,20454,852,19602,35948,0.7143,14014,50323,11,5630,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p21,2,3,46,5,22,25,0,0,2,0,0,0,12,845,49,0,113,0,68,70,49,25,68,0,546,0,2,1,-1,0,2,2,47,68,47,47,25, 596, 3675,0,6.1661,78.1915,0.5319, 26,12.6809,12.4526, 46,12.6809,11.9023, 1050,78.1915,144.205,2100,78.1915,299.712, 1,0.5319,0.499, 63,33.5106,31.4358, 42,22.3404,20.9572, 63,33.5106,31.4358,113, 567, 1617,0.3506,0.1993, 1, 21, -1,1.499, 11, -1,0.7852, 21, -1,1.499, 11,-1,0.7852,47.9259,2,0.2619,0,0,567,0,0,27174,47,48,1134,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,546,68,546,68,18834,816,18018,33165,0.7144,12915,46425,11,17128,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p34,2,3,72,5,35,38,0,0,2,0,0,0,12,1794,75,0,178,0,107,109,75,38,107,0,1326,0,2,1,-1,0,2,2,73,107,73,73,38, 1402, 9044,0,6.4508,123.89,0.5205, 39,19.2055,18.97, 72,19.2055,18.4346, 2584,123.89,290.822,5168,123.89,596.601, 1,0.5205,0.4996, 102,53.0959,50.9569, 68,35.3973,33.9713, 102,53.0959,50.9569,178, 1360, 3944,0.3448,0.1309, 1, 34, -1,1.9624, 17, -1,0.9812, 34, -1,1.9624, 17,-1,0.9812,73.95,2,0.2179,0,0,1360,0,0,100572,73,74,2720,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,1326,107,1326,107,16447,535,15912,28336,0.7125,11118,39769,2,4192,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p19,2,3,42,5,20,23,0,0,2,0,0,0,12,729,45,0,103,0,62,64,45,23,62,0,456,0,2,1,-1,0,2,2,43,62,43,43,23, 502, 3059,0,6.0936,71.1395,0.5349, 24,11.6744,11.448, 42,11.6744,10.8943, 874,71.1395,124.819,1748,71.1395,260.26, 1,0.5349,0.4988, 57,30.4884,28.4306, 38,20.3256,18.9537, 57,30.4884,28.4306,103, 475, 1349,0.3521,0.2168, 1, 19, -1,1.415, 10, -1,0.7448, 19, -1,1.415, 10,-1,0.7448,43.92,2,0.2713,0,0,475,0,0,20862,43,44,950,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,456,62,456,62,15792,744,15048,27929,0.7145,10849,39091,11,15792,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p23,2,3,50,5,24,27,0,0,2,0,0,0,12,969,53,0,123,0,74,76,53,27,74,0,644,0,2,1,-1,0,2,2,51,74,51,51,27, 698, 4347,0,6.2278,85.2353,0.5294, 28,13.6863,13.4565, 50,13.6863,12.9092, 1242,85.2353,164.501,2484,85.2353,340.941, 1,0.5294,0.4991, 69,36.5294,34.4403, 46,24.3529,22.9602, 69,36.5294,34.4403,123, 667, 1909,0.3494,0.1844, 1, 23, -1,1.5788, 12, -1,0.8237, 23, -1,1.5788, 12,-1,0.8237,51.931,2,0.2534,0,0,667,0,0,34638,51,52,1334,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,644,74,644,74,22140,888,21252,38841,0.7143,15157,54375,11,14116,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p30,2,3,64,5,31,34,0,0,2,0,0,0,12,1466,67,0,158,0,95,97,67,34,95,0,1050,0,2,1,-1,0,2,2,65,95,65,65,34, 1118, 7140,0,6.3864,109.846,0.5231, 35,17.2,16.9662, 64,17.2,16.4272, 2040,109.846,242.164,4080,109.846,498.266, 1,0.5231,0.4995, 90,47.0769,44.952, 60,31.3846,29.968, 90,47.0769,44.952,158, 1080, 3120,0.3462,0.1463, 1, 30, -1,1.8319, 15, -1,0.9159, 30, -1,1.8319, 15,-1,0.9159,65.9444,2,0.2291,0,0,1080,0,0,71220,65,66,2160,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,1050,95,1050,95,13075,475,12600,22608,0.7124,8850,31737,2,3340,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512
+matchcellar,p17,2,3,38,5,18,21,0,0,2,0,0,0,12,621,41,0,93,0,56,58,41,21,56,0,374,0,2,1,-1,0,2,2,39,56,39,39,21, 416, 2499,0,6,64.0769,0.5385, 22,10.6667,10.4424, 38,10.6667,9.8848, 714,64.0769,106.388,1428,64.0769,222.669, 1,0.5385,0.4985, 51,27.4615,25.4244, 34,18.3077,16.9496, 51,27.4615,25.4244,93, 391, 1105,0.3538,0.2379, 1, 17, -1,1.3262, 9, -1,0.7021, 17, -1,1.3262, 9,-1,0.7021,39.913,2,0.2818,0,0,391,0,0,15606,39,40,782,2,2,0,2,2,0,3.5,2,5,-1,0,-1,-1,1.0,1,1,0,0.5,0,1,0,1.5,1,2,0,1.5,1,2,0,1.0,374,56,374,56,13014,672,12342,23133,0.7146,8959,32373,11,10658,0,0,0,-512,-512,0,-512,0,0,0,0,0,0,0,0,0,0,-512,-512,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,0,0,0,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,0,0,0,0,-512,0,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512,-512

@@ -1,0 +1,586 @@
+@relation problem
+
+@attribute domain string
+
+@attribute task_name string
+
+@attribute requirements numeric
+
+@attribute types numeric
+
+@attribute objects numeric
+
+@attribute predicates numeric
+
+@attribute init numeric
+
+@attribute goal numeric
+
+@attribute actions numeric
+
+@attribute axioms numeric
+
+@attribute durative_actions numeric
+
+@attribute axiom_counter numeric
+
+@attribute function_symbols numeric
+
+@attribute function_administrator numeric
+
+@attribute generated_rules numeric
+
+@attribute final_queue_length numeric
+
+@attribute translator_variables numeric
+
+@attribute translator_derived_variables numeric
+
+@attribute translator_facts numeric
+
+@attribute translator_operators numeric
+
+@attribute mutex_key numeric
+
+@attribute strips_to_sas numeric
+
+@attribute ranges numeric
+
+@attribute goal_list numeric
+
+@attribute task_init numeric
+
+@attribute translator_act numeric
+
+@attribute translator_durative_act numeric
+
+@attribute translator_axiom numeric
+
+@attribute translator_num_axioms numeric
+
+@attribute translator_num_axioms_by_layer  numeric
+
+@attribute translator_max_num_layer  numeric
+
+@attribute translator_num_axiom_map numeric
+
+@attribute translator_const_num_axioms numeric
+
+@attribute translator_reachable numeric
+
+@attribute translator_groups numeric
+
+@attribute translator_mutex_group numeric
+
+@attribute translator_translation_key numeric
+
+@attribute numberVariablesCG numeric
+
+@attribute highLevelVariablesCG numeric
+
+@attribute totalEdgesCG numeric
+
+@attribute totalWeightCG numeric
+
+@attribute veRatio numeric
+
+@attribute weRatio numeric
+
+@attribute wvRatio numeric
+
+@attribute hvRatio numeric
+
+@attribute inputEdgeCGMax numeric
+
+@attribute inputEdgeCGAvg numeric
+
+@attribute inputEdgeCGStd numeric
+
+@attribute outputEdgeCGMax numeric
+
+@attribute outputEdgeCGAvg numeric
+
+@attribute outputEdgeCGStd numeric
+
+@attribute inputWeightCGMax numeric
+
+@attribute inputWeightCGAvg numeric
+
+@attribute inputWeightCGStd numeric
+
+@attribute outputWeightCGMax numeric
+
+@attribute outputWeightCGAvg numeric
+
+@attribute outputWeightCGStd numeric
+
+@attribute inputEdgeHVMax numeric
+
+@attribute inputEdgeHVAvg numeric
+
+@attribute inputEdgeHVStd numeric
+
+@attribute outputEdgeHVMax numeric
+
+@attribute outputEdgeHVAvg numeric
+
+@attribute outputEdgeHVStd numeric
+
+@attribute inputWeightHVMax numeric
+
+@attribute inputWeightHVAvg numeric
+
+@attribute inputWeightHVStd numeric
+
+@attribute outputWeightHVMax numeric
+
+@attribute outputWeightHVAvg numeric
+
+@attribute outputWeightHVStd numeric
+
+@attribute numberVariablesDTG numeric
+
+@attribute totalEdgesDTG numeric
+
+@attribute totalWeigthDTG numeric
+
+@attribute edVaRatioDTG numeric
+
+@attribute weEdRatioDTG numeric
+
+@attribute weVaRatioDTG numeric
+
+@attribute inputEdgeDTGMax numeric
+
+@attribute inputEdgeDTGAvg numeric
+
+@attribute inputEdgeDTGStd numeric
+
+@attribute outputEdgeDTGMax numeric
+
+@attribute outputEdgeDTGAvg numeric
+
+@attribute outputEdgeDTGStd numeric
+
+@attribute inputWeightDTGMax numeric
+
+@attribute inputWeightDTGAvg numeric
+
+@attribute inputWeightDTGStd numeric
+
+@attribute outputWeightDTGMax numeric
+
+@attribute outputWeightDTGAvg numeric
+
+@attribute outputWeightDTGStd numeric
+
+@attribute avg_level numeric
+
+@attribute avg_duration numeric
+
+@attribute str_level numeric
+
+@attribute str_duration numeric
+
+@attribute global_num_type_start numeric
+
+@attribute global_num_type_end numeric
+
+@attribute global_num_type_compressed numeric
+
+@attribute global_num_type_ax_red numeric
+
+@attribute global_total_level numeric
+
+@attribute global_min_level numeric
+
+@attribute global_max_level numeric
+
+@attribute global_total_duration numeric
+
+@attribute global_min_duration numeric
+
+@attribute global_max_duration numeric
+
+@attribute PDDL_assignment  numeric
+
+@attribute PDDL_durative_actions  numeric
+
+@attribute PDDL_type_numeric_duration  numeric
+
+@attribute PDDL_type_function_duration  numeric
+
+@attribute PDDL_avg_numeric_duration  numeric
+
+@attribute PDDL_min_numeric_duration  numeric
+
+@attribute PDDL_max_numeric_duration  numeric
+
+@attribute PDDL_functions  numeric
+
+@attribute PDDL_avg_arity  numeric
+
+@attribute PDDL_min_arity  numeric
+
+@attribute PDDL_max_arity  numeric
+
+@attribute PDDL_avg_at_start_precondition  numeric
+
+@attribute PDDL_min_at_start_precondition  numeric
+
+@attribute PDDL_max_at_start_precondition  numeric
+
+@attribute PDDL_std_at_start_precondition  numeric
+
+@attribute PDDL_avg_over_all_precondition  numeric
+
+@attribute PDDL_min_over_all_precondition  numeric
+
+@attribute PDDL_max_over_all_precondition  numeric
+
+@attribute PDDL_std_over_all_precondition  numeric
+
+@attribute PDDL_avg_at_start_postcondition  numeric
+
+@attribute PDDL_min_at_start_postcondition  numeric
+
+@attribute PDDL_max_at_start_postcondition  numeric
+
+@attribute PDDL_std_at_start_postcondition  numeric
+
+@attribute PDDL_avg_at_end_postcondition  numeric
+
+@attribute PDDL_min_at_end_postcondition  numeric
+
+@attribute PDDL_max_at_end_postcondition  numeric
+
+@attribute PDDL_std_at_end_postcondition  numeric
+
+@attribute SAT_RationofRelevantActions  numeric
+
+@attribute SAT_NumberofActon  numeric
+
+@attribute SAT_NumberofPropositions  numeric
+
+@attribute SAT_NumberofRelevantActons  numeric
+
+@attribute SAT_NumberofRelevantPropositions  numeric
+
+@attribute SAT_VariablesEnd  numeric
+
+@attribute SAT_propEnd  numeric
+
+@attribute SAT_actionEnd  numeric
+
+@attribute SAT_TotalMutexClauses  numeric
+
+@attribute SAT_ratioEnd  numeric
+
+@attribute SAT_TotalEventClauses  numeric
+
+@attribute SAT_TotalClauses  numeric
+
+@attribute SAT_numberFiles  numeric
+
+@attribute SAT_nvarsOrig  numeric
+
+@attribute SAT_nclausesOrig  numeric
+
+@attribute SAT_nvars  numeric
+
+@attribute SAT_nclauses  numeric
+
+@attribute SAT_reducedVars  numeric
+
+@attribute SAT_reducedClauses  numeric
+
+@attribute SAT_Pre-featuretime  numeric
+
+@attribute SAT_vars-clauses-ratio  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-mean  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-coeff-variation  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-min  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-max  numeric
+
+@attribute SAT_POSNEG-RATIO-CLAUSE-entropy  numeric
+
+@attribute SAT_VCG-CLAUSE-mean  numeric
+
+@attribute SAT_VCG-CLAUSE-coeff-variation  numeric
+
+@attribute SAT_VCG-CLAUSE-min  numeric
+
+@attribute SAT_VCG-CLAUSE-max  numeric
+
+@attribute SAT_VCG-CLAUSE-entropy  numeric
+
+@attribute SAT_UNARY  numeric
+
+@attribute SAT_BINARY+  numeric
+
+@attribute SAT_TRINARY+  numeric
+
+@attribute SAT_Basic-featuretime  numeric
+
+@attribute SAT_VCG-VAR-mean  numeric
+
+@attribute SAT_VCG-VAR-coeff-variation  numeric
+
+@attribute SAT_VCG-VAR-min  numeric
+
+@attribute SAT_VCG-VAR-max  numeric
+
+@attribute SAT_VCG-VAR-entropy  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-mean  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-stdev  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-min  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-max  numeric
+
+@attribute SAT_POSNEG-RATIO-VAR-entropy  numeric
+
+@attribute SAT_HORNY-VAR-mean  numeric
+
+@attribute SAT_HORNY-VAR-coeff-variation  numeric
+
+@attribute SAT_HORNY-VAR-min  numeric
+
+@attribute SAT_HORNY-VAR-max  numeric
+
+@attribute SAT_HORNY-VAR-entropy  numeric
+
+@attribute SAT_horn-clauses-fraction  numeric
+
+@attribute SAT_VG-mean  numeric
+
+@attribute SAT_VG-coeff-variation  numeric
+
+@attribute SAT_VG-min  numeric
+
+@attribute SAT_VG-max  numeric
+
+@attribute SAT_KLB-featuretime  numeric
+
+@attribute SAT_CG-mean  numeric
+
+@attribute SAT_CG-coeff-variation  numeric
+
+@attribute SAT_CG-min  numeric
+
+@attribute SAT_CG-max  numeric
+
+@attribute SAT_CG-entropy  numeric
+
+@attribute SAT_cluster-coeff-mean  numeric
+
+@attribute SAT_cluster-coeff-coeff-variation  numeric
+
+@attribute SAT_cluster-coeff-min  numeric
+
+@attribute SAT_cluster-coeff-max  numeric
+
+@attribute SAT_cluster-coeff-entropy  numeric
+
+@attribute SAT_CG-featuretime  numeric
+
+@attribute SAT_DIAMETER-mean  numeric
+
+@attribute SAT_DIAMETER-coeff-variation  numeric
+
+@attribute SAT_DIAMETER-min  numeric
+
+@attribute SAT_DIAMETER-max  numeric
+
+@attribute SAT_DIAMETER-entropy  numeric
+
+@attribute SAT_DIAMETER-featuretime  numeric
+
+@attribute SAT_cl-num-mean  numeric
+
+@attribute SAT_cl-num-coeff-variation  numeric
+
+@attribute SAT_cl-num-min  numeric
+
+@attribute SAT_cl-num-max  numeric
+
+@attribute SAT_cl-num-q90  numeric
+
+@attribute SAT_cl-num-q10  numeric
+
+@attribute SAT_cl-num-q75  numeric
+
+@attribute SAT_cl-num-q25  numeric
+
+@attribute SAT_cl-num-q50  numeric
+
+@attribute SAT_cl-size-mean  numeric
+
+@attribute SAT_cl-size-coeff-variation  numeric
+
+@attribute SAT_cl-size-min  numeric
+
+@attribute SAT_cl-size-max  numeric
+
+@attribute SAT_cl-size-q90  numeric
+
+@attribute SAT_cl-size-q10  numeric
+
+@attribute SAT_cl-size-q75  numeric
+
+@attribute SAT_cl-size-q25  numeric
+
+@attribute SAT_cl-size-q50  numeric
+
+@attribute SAT_cl-featuretime  numeric
+
+@attribute SAT_SP-bias-mean  numeric
+
+@attribute SAT_SP-bias-coeff-variation  numeric
+
+@attribute SAT_SP-bias-min  numeric
+
+@attribute SAT_SP-bias-max  numeric
+
+@attribute SAT_SP-bias-q90  numeric
+
+@attribute SAT_SP-bias-q10  numeric
+
+@attribute SAT_SP-bias-q75  numeric
+
+@attribute SAT_SP-bias-q25  numeric
+
+@attribute SAT_SP-bias-q50  numeric
+
+@attribute SAT_SP-unconstraint-mean  numeric
+
+@attribute SAT_SP-unconstraint-coeff-variation  numeric
+
+@attribute SAT_SP-unconstraint-min  numeric
+
+@attribute SAT_SP-unconstraint-max  numeric
+
+@attribute SAT_SP-unconstraint-q90  numeric
+
+@attribute SAT_SP-unconstraint-q10  numeric
+
+@attribute SAT_SP-unconstraint-q75  numeric
+
+@attribute SAT_SP-unconstraint-q25  numeric
+
+@attribute SAT_SP-unconstraint-q50  numeric
+
+@attribute SAT_sp-featuretime  numeric
+
+@attribute SAT_vars-reduced-depth-1  numeric
+
+@attribute SAT_vars-reduced-depth-4  numeric
+
+@attribute SAT_vars-reduced-depth-16  numeric
+
+@attribute SAT_vars-reduced-depth-64  numeric
+
+@attribute SAT_vars-reduced-depth-256  numeric
+
+@attribute SAT_unit-featuretime  numeric
+
+@attribute SAT_LP_OBJ  numeric
+
+@attribute SAT_LPSLack-mean  numeric
+
+@attribute SAT_LPSLack-coeff-variation  numeric
+
+@attribute SAT_LPSLack-min  numeric
+
+@attribute SAT_LPSLack-max  numeric
+
+@attribute SAT_lpIntRatio  numeric
+
+@attribute SAT_lpTIME  numeric
+
+@attribute SAT_saps_BestSolution_Mean  numeric
+
+@attribute SAT_saps_BestSolution_CoeffVariance  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Mean  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_CoeffVariance  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Median  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Q.10  numeric
+
+@attribute SAT_saps_FirstLocalMinStep_Q.90  numeric
+
+@attribute SAT_saps_BestAvgImprovement_Mean  numeric
+
+@attribute SAT_saps_BestAvgImprovement_CoeffVariance  numeric
+
+@attribute SAT_saps_FirstLocalMinRatio_Mean  numeric
+
+@attribute SAT_saps_FirstLocalMinRatio_CoeffVariance  numeric
+
+@attribute SAT_ls-saps-featuretime  numeric
+
+@attribute SAT_gsat_BestSolution_Mean  numeric
+
+@attribute SAT_gsat_BestSolution_CoeffVariance  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Mean  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_CoeffVariance  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Median  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Q.10  numeric
+
+@attribute SAT_gsat_FirstLocalMinStep_Q.90  numeric
+
+@attribute SAT_gsat_BestAvgImprovement_Mean  numeric
+
+@attribute SAT_gsat_BestAvgImprovement_CoeffVariance  numeric
+
+@attribute SAT_gsat_FirstLocalMinRatio_Mean  numeric
+
+@attribute SAT_gsat_FirstLocalMinRatio_CoeffVariance  numeric
+
+@attribute SAT_ls-gsat-featuretime  numeric
+
+@attribute SAT_lobjois-mean-depth-over-vars  numeric
+
+@attribute SAT_lobjois-log-num-nodes-over-vars  numeric
+
+@attribute SAT_lobjois-featuretime  numeric
+
+
+
+@data
+
+
+
+satellite,strips-sat-x-1,4,5,165,9,639,92,0,0,5,0,0,0,45,43804,1170,0,2727,0,1180,1569,1170,92,804,0,32628,0,4,1,-1,0,4,5,1166,1180,1166,269,92, 23085, 37556,0,1.6269,139.613,0.342, 106,9.6357,13.4513, 36,9.6357,10.2838, 2175,139.613,242.398,60,18.6171,15.5403, 90,0.5985,6.6592, 60,11.8216,17.6702, 1510,10.1673,115.931, 60,11.8216,17.6702,930, 24664, 28074,0.8785,0, 1, 57,4.3123,0, 57,1.9703,0, 57,4.3123,0, 57,1.9703,0,269.117,2,0.5571,0,173,24491,0,0,6637506,269,272,49328,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,70,9,129,26,0,0,5,0,0,0,45,15812,254,0,769,0,260,527,254,26,199,0,12535,0,4,1,-1,0,4,5,250,260,250,73,26, 4166, 6401,0,1.5365,87.6849,0.3562, 28,8.1781,7.3342, 26,8.1781,8.6473, 375,87.6849,94.1083,40,14.0959,12.4649, 26,0.863,4.2694, 40,9.6986,14.6097, 330,9.1096,47.1423, 40,9.6986,14.6097,412, 11235, 11938,0.9411,0, 1, 39,5.8973,0.1154, 39,4.1918,0, 39,5.8973,0.1154, 39,4.1918,0,73.0575,2,0.3939,0,43,11192,0,0,820801,73,76,22470,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,72,9,106,27,0,0,5,0,0,0,45,18134,270,0,829,0,278,571,270,27,178,0,14771,0,4,1,-1,0,4,5,266,278,266,70,27, 4028, 6065,0,1.5057,86.6429,0.3857, 24,8.0143,7.4632, 27,8.0143,8.476, 404,86.6429,98.1527,40,13.1571,12.1169, 22,0.7143,3.5016, 40,9.4857,14.0395, 404,9.6714,52.6359, 40,9.4857,14.0395,434, 13524, 14156,0.9554,0, 1, 43,6.3,0.1178, 43,4.75,0, 43,6.3,0.1178, 43,4.75,0,0,2,0.3476,0,39,13485,0,0,947281,70,73,27048,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,107,9,298,40,0,0,5,0,0,0,45,27362,502,0,1335,0,512,845,502,40,405,0,21298,0,4,1,-1,0,4,5,498,512,498,138,40, 10344, 16428,0,1.5882,119.043,0.2899, 47,9.2464,9.4, 35,9.2464,10.5066, 829,119.043,147.157,56,17.0725,15.7285, 0, 0, 0, 56,11.0725,18.1861, 0, 0, 0, 56,11.0725,18.1861,612, 17871, 19471,0.9178,0, 1, 49,5.0978,0, 49,2.9601,0, 49,5.0978,0, 49,2.9601,0,138.079,2,0.4584,0,91,17780,0,0,2467603,138,141,35742,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,54,9,64,21,0,0,5,0,0,0,45,7621,198,0,539,0,202,353,198,21,118,0,5646,0,4,1,-1,0,4,5,194,202,194,53,21, 1812, 2722,0,1.5022,51.3585,0.3962, 18,5.3585,4.8256, 18,5.3585,4.9339, 197,51.3585,58.0543,28,8.717,7.4817, 12,0.3962,2.0219, 28,5.6604,8.8743, 131,4.3585,22.2143, 28,5.6604,8.8743,256, 5110, 5415,0.9437,0, 1, 31,4.3396,0.1348, 31,3.3774,0, 31,4.3396,0.1348, 31,3.3774,0,53.0591,2,0.3912,0,29,5081,0,0,271132,53,56,10220,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,96,9,219,61,0,0,5,0,0,0,45,17418,612,0,1427,0,616,827,612,61,315,0,12757,0,4,1,-1,0,4,5,608,616,608,139,61, 8297, 13085,0,1.5771,94.1367,0.4388, 66,8.3453,10.6937, 20,8.3453,7, 860,94.1367,144.232,32,14.4245,10.3583, 66,0.8777,7.289, 32,10.1871,12.569, 860,12.0144,99.482, 32,10.1871,12.569,488, 10062, 11435,0.8799,0, 1, 43,3.7122,0, 43,2.0288,0, 43,3.7122,0, 43,2.0288,0,139.127,2,0.5795,0,75,9987,0,0,1399895,139,142,20124,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,55,9,85,22,0,0,5,0,0,0,45,7384,194,0,521,0,200,339,194,22,140,0,5310,0,4,1,-1,0,4,5,190,200,190,59,22, 2415, 3810,0,1.5776,64.5763,0.3729, 24,7.0339,6.1945, 21,7.0339,6.9987, 340,64.5763,75.1913,32,11.7627,10.6299, 24,1.0848,4.7203, 32,8.2034,12.4856, 340,13.661,60.1559, 32,8.2034,12.4856,258, 4566, 5034,0.907,0, 1, 29,4.2881,0.128, 29,2.9152,0, 29,4.2881,0.128, 29,2.9152,0,59.1003,2,0.5122,0,35,4531,0,0,269852,59,62,9132,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,98,9,228,70,0,0,5,0,0,0,45,18186,724,0,1661,0,730,949,724,70,326,0,13391,0,4,1,-1,0,4,5,720,730,720,145,70, 7775, 12041,0,1.5487,83.0414,0.4828, 69,7.4897,10.9828, 22,7.4897,5.7441, 1099,83.0414,141.453,33,13.3034,8.3239, 60,0.4138,4.9655, 28,8.9379,10.1412, 577,3.9793,47.7517, 28,8.9379,10.1412,510, 10934, 12251,0.8925,0, 1, 45,3.5655,0, 45,2.0345,0, 45,3.5655,0, 45,2.0345,0,145.107,2,0.5346,0,71,10863,0,0,1586605,145,148,21868,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,91,9,196,44,0,0,5,0,0,0,45,23544,412,0,1141,0,422,741,412,44,287,0,18776,0,4,1,-1,0,4,5,408,422,408,113,44, 7595, 11842,0,1.5592,104.796,0.3894, 48,9.8938,10.1068, 31,9.8938,10.2088, 834,104.796,134,48,17,15.0618, 46,0.9735,6.0448, 48,12.4602,17.4863, 545,11.8584,73.8194, 48,12.4602,17.4863,548, 16361, 17692,0.9248,0, 1, 47,5.4292,0, 47,3.3805,0, 47,5.4292,0, 47,3.3805,0,113.076,2,0.4539,0,65,16296,0,0,1850030,113,116,32722,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,77,9,149,25,0,0,5,0,0,0,45,17631,274,0,823,0,284,561,274,25,226,0,13893,0,4,1,-1,0,4,5,270,284,270,82,25, 4739, 7285,0,1.5372,88.8415,0.3049, 27,7.6707,6.3612, 26,7.6707,8.5712, 353,88.8415,90.5087,40,13.378,12.3916, 27,0.7561,3.9926, 40,8.5366,14.4325, 353,8.5366,46.7023, 40,8.5366,14.4325,444, 12399, 13135,0.944,0, 1, 41,5.6037,0.1091, 41,3.9573,0, 41,5.6037,0.1091, 41,3.9573,0,82.054,2,0.3784,0,53,12346,0,0,1017388,82,85,24798,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,136,9,435,84,0,0,5,0,0,0,45,37403,920,0,2213,0,930,1305,920,84,571,0,28860,0,4,1,-1,0,4,5,916,930,916,211,84, 17717, 28962,0,1.6347,137.261,0.3981, 82,9.782,12.4089, 34,9.782,9.8985, 1727,137.261,227.522,56,18.0948,15.1335, 79,1.1374,8.3317, 56,12.4739,17.4465, 1556,19.5498,153.399, 56,12.4739,17.4465,800, 22699, 25326,0.8963,0, 1, 55,4.5237,0, 55,2.3081,0, 55,4.5237,0, 55,2.3081,0,211.103,2,0.5259,0,125,22574,0,0,4791824,211,214,45398,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,120,9,345,81,0,0,5,0,0,0,45,23048,930,0,2083,0,934,1165,930,81,465,0,16553,0,4,1,-1,0,4,5,926,934,926,190,81, 12974, 20911,0,1.6118,0,0.4263, 84,8.4684,11.7709, 32,8.4684,8.307, 1488,0,189.733,48,15.4053,12.862, 76,0.4,5.4991, 48,10.4421,14.6228, 1234,6.4947,89.2879, 48,10.4421,14.6228,610, 12162, 14162,0.8588,0, 1, 47,3.5579,0, 47,1.7237,0, 47,3.5579,0, 47,1.7237,0,190.147,2,0.622,0,105,12057,0,0,2312573,190,193,24324,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,66,9,83,32,0,0,5,0,0,0,45,11419,360,0,903,0,366,555,360,32,149,0,8822,0,4,1,-1,0,4,5,356,366,356,68,32, 2691, 4052,0,1.5058,59.5882,0.4706, 34,5.2206,6.9002, 13,5.2206,4.0795, 458,59.5882,91.5822,20,8.8824,6.3002, 0, 0, 0, 20,5.7647,7.3045, 0, 0, 0, 20,5.7647,7.3045,326, 7991, 8396,0.9518,0, 1, 39,4.2721,0.1195, 39,3.3309,0, 39,4.2721,0.1195, 39,3.3309,0,68.0472,2,0.3536,0,31,7960,0,0,543765,68,71,15982,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,60,9,72,33,0,0,5,0,0,0,45,9463,256,0,675,0,262,431,256,33,132,0,7180,0,4,1,-1,0,4,5,252,262,252,67,33, 2395, 3494,0,1.4589,52.1493,0.4925, 36,6.2687,7.5618, 19,6.2687,5.3213, 334,52.1493,73.0999,28,9.8209,7.5408, 36,0.6866,4.5127, 28,7.1045,8.9261, 334,6.1194,41.3978, 28,7.1045,8.9261,304, 6502, 6950,0.9355,0, 1, 35,4.1194,0.1203, 35,3.0746,0, 35,4.1194,0.1203, 35,3.0746,0,67.0677,2,0.4253,0,31,6471,0,0,436074,67,70,13004,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,90,9,199,47,0,0,5,0,0,0,45,15830,500,0,1193,0,506,705,500,47,289,0,11579,0,4,1,-1,0,4,5,496,506,496,122,47, 7413, 11787,0,1.59,96.6148,0.3852, 55,8.6721,9.7329, 27,8.6721,8.0515, 949,96.6148,139.772,44,15.1393,12.2904, 46,0.377,4.1475, 44,10.7869,14.548, 566,4.6393,51.0328, 44,10.7869,14.548,444, 9165, 10429,0.8788,0, 1, 41,3.9549,0, 41,2.1598,0, 41,3.9549,0, 41,2.1598,0,122.13,2,0.5855,0,71,9094,0,0,1119320,122,125,18330,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,72,9,131,32,0,0,5,0,0,0,45,11903,324,0,821,0,330,509,324,32,203,0,8838,0,4,1,-1,0,4,5,320,330,320,83,32, 4486, 7178,0,1.6001,86.4819,0.3855, 36,7.6506,7.5927, 22,7.6506,7.2518, 512,86.4819,109.898,36,13.2289,10.991, 36,0.8072,4.7882, 36,9.1566,13.0767, 512,11.8434,72.5676, 36,9.1566,13.0767,346, 7367, 8111,0.9083,0, 1, 37,4.259,0.1084, 37,2.6988,0, 37,4.259,0.1084, 37,2.6988,0,83.096,2,0.5034,0,49,7318,0,0,612168,83,86,14734,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,115,9,339,49,0,0,5,0,0,0,45,30098,630,0,1605,0,640,987,630,49,454,0,23372,0,4,1,-1,0,4,5,626,640,626,153,49, 11970, 19040,0,1.5906,124.444,0.3203, 54,9.1372,9.8757, 29,9.1372,9.7566, 1088,124.444,171.867,44,17.1765,14.5275, 54,0.4837,4.6303, 44,11,16.8548, 1088,8.5294,89.2855, 44,11,16.8548,656, 19368, 21153,0.9156,0, 1, 51,4.9608,0, 51,2.8105,0, 51,4.9608,0, 51,2.8105,0,153.08,2,0.4619,0,99,19269,0,0,2964850,153,156,38736,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,79,9,146,39,0,0,5,0,0,0,45,20271,334,0,971,0,344,649,334,39,225,0,16397,0,4,1,-1,0,4,5,330,344,330,91,39, 5016, 7555,0,1.5062,83.022,0.4286, 41,9.1758,10.2481, 22,9.1758,8.2763, 472,83.022,106.096,32,15.4615,11.6838, 41,0.8132,5.4569, 32,11.2967,14.0779, 472,9.3516,62.763, 32,11.2967,14.0779,490, 14907, 15884,0.9385,0, 1, 45,5.7527,0.1037, 45,3.9231,0, 45,5.7527,0.1037, 45,3.9231,0,91.0602,2,0.4067,0,47,14860,0,0,1357435,91,94,29814,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,114,9,285,79,0,0,5,0,0,0,45,31045,748,0,1855,0,758,1119,748,79,399,0,24480,0,4,1,-1,0,4,5,744,758,744,172,79, 11519, 17632,0,1.5307,102.512,0.4593, 78,9.1395,12.5292, 29,9.1395,8.8766, 1172,102.512,162.229,44,15.7674,12.9531, 78,1.2733,9.5862, 44,11.2093,14.8521, 1172,16.2791,126.133, 44,11.2093,14.8521,708, 20839, 22712,0.9175,0, 1, 53,4.4971,0, 53,2.6366,0, 53,4.4971,0, 53,2.6366,0,172.082,2,0.4707,0,89,20750,0,0,3586007,172,175,41678,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+satellite,strips-sat-x-1,4,5,62,9,109,24,0,0,5,0,0,0,45,9404,220,0,593,0,226,385,220,24,171,0,6915,0,4,1,-1,0,4,5,216,226,216,67,24, 3254, 5175,0,1.5903,77.2388,0.3582, 25,7.5373,6.5775, 24,7.5373,7.4098, 352,77.2388,86.5981,40,12.8806,11.1657, 24,0.9552,4.4435, 40,8.7164,13.2381, 352,11.5821,55.6179, 40,8.7164,13.2381,294, 5878, 6460,0.9099,0, 1, 33,4.4627,0.1203, 33,2.9254,0, 33,4.4627,0.1203, 33,2.9254,0,67.0937,2,0.4962,0,41,5837,0,0,394377,67,70,11756,2,2,0,5,5,0,4.0,1,7,-1,0,-1,-1,1.0,0,2,0.4472,2.2,1,5,0,0.8,0,2,0,1.0,1,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
